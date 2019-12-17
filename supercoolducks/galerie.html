@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Super Coole Enten</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="author" content="Gunter Papaamus">
+    <meta name="description" content="Super Coole Enten hier bei uns! Alle Enten die Sie sich nur wuenschen koennen.">
+    <meta name="keywords" content="Super Coole Enten">
+
+</head>
+
+<body>
+    <div id="holder">
+        <header>
+            <span id="homeButton"><a href="index.html">&#9728;</a></span>
+            <h1 class="callout">Super Coole Enten</h1>
+            <span id="mySpan" onclick="openNav()">&#9776;</span>
+
+        </header>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="closeButton" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uebermich.html">Über mich</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+
+        </nav>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+
+        </script>
+
+
+        <section id="contentgrid">
+            <h2>Super Coole Enten</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/dieter.jpg" style="width: 100%">
+                    <img src="images/ebuland.jpg" style="width: 100%">
+                    <img src="images/Emilia.jpg" style="width: 100%">
+                    
+                </div>
+                <div class="column">
+                    <img src="images/friedrich.png" style="width: 100%">
+                    <img src="images/gerhard.jpg" style="width: 100%">
+                    <img src="images/HappyJohan.jpg" style="width: 100%">
+                     <img src="images/RolandRunner.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="images/Herbert.png" style="width: 100%">
+                    <img src="images/Josephine.jpg" style="width: 100%">
+                    <img src="images/ringler.jpg" style="width: 100%">
+                    <img src="images/SvenjaRareTransgender.jpg" style="width: 100%">
+                </div>
+            </div>
+        </section>
+        <footer> &copy; <em> 2019 Super Coole Enten <span class="dotfooter"> · </span> <a class="mobileLink" href="kontakt.html">Kontakt</a>
+                <span class="dotfooter"> · </span> <a class="mobileLink" href="impressum.html">Impressum</a>
+            </em> </footer>
+    </div>
+</body>
+
+</html>

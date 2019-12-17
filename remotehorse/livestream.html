@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Livestream - Remotehorse.org</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="author" content="Jeffrey The Boss" />
+    <meta
+      name="description"
+      content="Remote Horses for renting! The best remote horsing site. Impressum"
+    />
+    <meta
+      name="keywords"
+      content="remote horse, horse, remote, renting horses, remotehorse, impressum"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/favicon//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/favicon//apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/favicon//apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="resources/favicon//apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="resources/favicon//apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="resources/favicon//apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="resources/favicon//apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicon//apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="resources/favicon//android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicon//favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicon//manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="resources/favicon//ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <!-- MAIN NAV PIC TITLE -->
+    <div>
+      <img src="resources/images/Slide4.jpg" class="livestreambackgroundimg" />
+      <div class="headernavmenu">
+        <header>
+          <a href="index.html" class="homelogo"
+            ><img src="resources/images/remotehorselogo.png"
+          /></a>
+          <span
+            style="font-size:30px;cursor:pointer"
+            class="opennavbutton"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+          <nav id="myHeader">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <div class="overlay-content">
+                <a
+                  href="horseshop.html"
+                  class="impressumlink"
+                  onclick="closeNav()"
+                >
+                  Horse Shop</a
+                >
+                <a
+                  href="accessories.html"
+                  class="impressumlink"
+                  onclick="closeNav()"
+                >
+                  Accessoires</a
+                >
+                <a
+                  href="livestream.html"
+                  class="impressumlink"
+                  onclick="closeNav()"
+                >
+                  Livestream</a
+                >
+                <a
+                  href="gallery.html"
+                  class="impressumlink"
+                  onclick="closeNav()"
+                >
+                  Gallery</a
+                >
+                <a
+                  href="ageverify.html"
+                  class="impressumlink"
+                  onclick="closeNav()"
+                >
+                  Sexual Content</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="mainlivestreamdiv">
+        <div class="livestreamiframe">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/AohUh4Wx2ps?autoplay=1&showinfo=0&controls=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+
+        <div class="livestreamchatsection">
+          <div id="messageBody">
+            <div class="livestreamchatboxtitle">
+              <h2>Stream Chat</h2>
+            </div>
+
+            <p id="streamchatmessage"></p>
+          </div>
+          <script>
+            function test2() {
+              var messageBody = document.querySelector("#messageBody");
+              messageBody.scrollTop =
+                messageBody.scrollHeight - messageBody.clientHeight;
+            }
+          </script>
+          <script>
+            function escapeHtml(text) {
+              return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+            }
+
+            function randomChatEvent5() {
+              clearTimeout(stop);
+              document.getElementById("streamchatmessage").innerHTML +=
+                "<p> <span style='color:green;'>bobman_bubbelcar: </span> are you a retard?</p>";
+            }
+
+            function randomChatEvent4() {
+              clearTimeout(stop);
+              document.getElementById("streamchatmessage").innerHTML +=
+                "<p> <span style='color:yellow;'>ppapajohnn: </span> are you a retard?</p>";
+              stop = setTimeout(randomChatEvent5, 2000);
+            }
+
+            function randomChatEvent3() {
+              clearTimeout(stop);
+              document.getElementById("streamchatmessage").innerHTML +=
+                "<p> <span style='color:green;'>bobman_bubbelcar: </span> but you are like a retard he is right, not you</p>";
+              stop = setTimeout(randomChatEvent4, 3000);
+            }
+
+            function randomChatEventTwo() {
+              clearTimeout(stop);
+              document.getElementById("streamchatmessage").innerHTML +=
+                "<p> <span style='color:green;'>bobman_bubbelcar: </span> Bro you make thigns way to complicated. you just need to have your priorities in order like a real man</p>";
+              stop = setTimeout(randomChatEvent3, 7000);
+            }
+
+            function randomChatEvent() {
+              clearTimeout(stop);
+              document.getElementById("streamchatmessage").innerHTML +=
+                "<p> <span style='color:yellow;'>ppapajohnn: </span> yyeh like she fuckign  cute an shit but i shtink she alot crazy also so need be smart with the moves like chess for intelectual but with penis in mind you understand?</p>";
+              stop = setTimeout(randomChatEventTwo, 5000);
+            }
+
+            var counter = 0;
+
+            function testForNow() {
+              counter++;
+              if (counter <= 10) {
+                document.getElementById("streamchatmessage").innerHTML +=
+                  "<p> <span style='color:gray;'>guest: </span>" +
+                  escapeHtml(
+                    document.getElementById("livestreamsendtextfield").value
+                  ) +
+                  "</p>";
+                document.getElementById("livestreamsendtextfield").value = "";
+                if (counter == 3) {
+                  document.getElementById("streamchatmessage").innerHTML +=
+                    "<p> <span style='color:lightblue;'>johnson1991: </span> are you a retard?</p>";
+                }
+                if (counter == 7) {
+                  document.getElementById("streamchatmessage").innerHTML +=
+                    "<p> <span style='color:orange;'>blueballicker: </span> i figured out my sexual orientation with this new tea sort</p>";
+                }
+              } else if (counter == 11) {
+                document.getElementById("streamchatmessage").innerHTML +=
+                  "<h2 style='color: red;'>You have been permanently banned from this chatroom</h2>";
+                document.getElementById("livestreamsendtextfield").value =
+                  "You have been banned";
+                document.getElementById(
+                  "livestreamsendtextfield"
+                ).readOnly = true;
+                document.getElementById("streamchatmessage").innerHTML +=
+                  "<p> <span style='color:black;'>James: </span> idiot</p>";
+              }
+            }
+            stop = setTimeout(randomChatEvent, 5000);
+          </script>
+          <div class="livestreamchatinput">
+            <form onsubmit="testForNow();test2();return false" method="get">
+              <label for="message"></label>
+              <input
+                name="message"
+                type="text"
+                id="livestreamsendtextfield"
+                placeholder="your message"
+                required
+                maxlength="300"
+              />
+              <label for="submit"></label>
+              <input type="submit" id="livestreamsendbutton" value="Send" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <footer>
+        <div class="footerbox">
+          <div class="footerboxtitle">
+            <h2>Remote Horse renting Service international</h2>
+          </div>
+          <div class="footerboxcontent">
+            <p>
+              We are the first and worldwide only remote horse renting
+              service.<br />
+              Starting in 2019 with 1 single employee (me) now still be 1 but 1
+              enough.
+            </p>
+          </div>
+        </div>
+        <div class="footerinhaber">
+          <p>
+            GUNTEHRWEG. 14S, ESSEN <br />
+            +49 (0)201 67440 3939 <br />
+            remotehorse.org<br />
+            &#9400; Remotehorse.org – 2019.<br />
+            Made with big love in africa <br />
+            All rights reserved
+          </p>
+        </div>
+        <div class="footerlinks">
+          <div class="footerlinkstitle">Links</div>
+          <div class="footerlinkscontent">
+            <ul>
+              <li><a href="impressum.html"> Impressum </a></li>
+              <li><a href="#"> About </a></li>
+              <li><a href="#"> Facebook </a></li>
+              <li><a href="#"> Instagram </a></li>
+              <li><a href="#"> Twitch </a></li>
+              <li><a href="#"> Twitter </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerlinks">
+          <div class="footerlinkstitle">Jingles</div>
+          <div class="footerlinkscontent">
+            <ul>
+              <li><a href="#" onclick="alert('Ringle')"> Ringle </a></li>
+              <li><a href="#" onclick="alert('Dingle')"> Dingle</a></li>
+              <li><a href="#" onclick="alert('Mingle')"> Mingle </a></li>
+              <li><a href="#" onclick="alert('Single')"> Single </a></li>
+              <li><a href="#" onclick="alert('Chingle')"> Chingle </a></li>
+              <li>
+                <a href="#" onclick="alert('Kornringle')"> Kornringle </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

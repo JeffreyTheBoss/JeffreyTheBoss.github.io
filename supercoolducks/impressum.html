@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Super Coole Enten - Impressum</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="author" content="Gunter Papaamus">
+    <meta name="description" content="Impressum">
+    <meta name="keywords" content="Impressum cool">
+</head>
+
+<body>
+    <div id="holder">
+        <header>
+            <span id="homeButton"><a href="index.html">&#9728;</a></span>
+            <h1 class="callout">Super Coole Enten</h1>
+            <span id="mySpan" onclick="openNav()">&#9776;</span>
+
+
+        </header>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="closeButton" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uebermich.html">Über mich</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+
+        </nav>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+        </script>
+
+        <section id="content">
+            <img src="images/dieter.jpg" alt="dieter die coole Ente" class="imgleft" width="250px" height="250px">
+            <h2>Impressum</h2>
+            <h3>Super Coole Informationen</h3>
+            <article class="cf">
+                <p><b>
+                    Max Ente<br>
+                    Entenkaempfer <br>
+                    Cool str. 20<br>
+                    12345 Entenhausen<br>
+                    <br>
+                    Telefon: 0123-456789<br>
+                    E-Mail: <a href="mailto:enten@mann.de">enten@mann.de</a><br>
+                </b></p>
+            </article>
+        </section>
+
+        <footer> &copy; <em>2019 Super Coole Enten <span class="dotfooter">· </span><a class="mobileLink" href="kontakt.html">Kontakt</a><span class="dotfooter">· </span><a class="mobileLink" href="impressum.html">Impressum</a></em></footer>
+
+    </div>
+</body></html>

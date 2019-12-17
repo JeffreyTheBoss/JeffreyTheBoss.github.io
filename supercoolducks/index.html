@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Super Coole Enten</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="author" content="Gunter Papaamus">
+    <meta name="description" content="Super Coole Enten hier bei uns! Alle Enten die Sie sich nur wuenschen koennen.">
+    <meta name="keywords" content="Super Coole Enten">
+
+</head>
+
+<body>
+    <div id="holder">
+        <header>
+            <span id="homeButton"><a href="index.html">&#9728;</a></span>
+            <h1 class="callout">Super Coole Enten</h1>
+            <span id="mySpan" onclick="openNav()">&#9776;</span>
+
+        </header>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="closeButton" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uebermich.html">Über mich</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+
+        </nav>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+
+        </script>
+
+
+        <section id="content">
+            <h2>Super Coole Enten</h2>
+            <article>
+                <h3>Brauchen wir wirklich coole Enten?</h3>
+                <p>
+                    <b>Super Coole Enten</b>, der Lebensraum der Stockenten
+                    Dort wo Wasser ist ist coole Ente, kannst du meistens auch Stockenten beobachten.
+                    Sie leben an stehenden und langsam fließenden Gewässern. Manchmal begnügen sie sich sogar mit kleinen Tümpeln.
+                    In fast jedem Park sind sie auch auf den Seen zu beobachten. Im Winter ziehen einige Stockenten an die Meeresküsten.
+                </p>
+
+
+
+            </article>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/friedrich.png" alt="friedrich die Ente" style="width:100%">
+                    <div class="text">Friedrich the duck</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/Emilia.jpg" alt="emilia die nicht ente" style="width:100%">
+                    <div class="text">Some ducks arent even ducks</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/Herbert.png" alt="herbert laesst schmecken" style="width:100%">
+                    <div class="text">Herbert tastes it</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/Josephine.jpg" alt="Josi gehts gut" style="width:100%">
+                    <div class="text">Josi live better life</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/RolandRunner.jpg" alt="Roland kann nicht lesen" style="width:100%">
+                    <div class="text">Roland can not read</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+            </script>
+            <br>
+
+            <div style="text-align:center" class="navigationButtons">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+
+            <article>
+                <h3>Check out my <a href="galerie.html">gallery</a> too!</h3>
+                <p>
+                    Entenvögel haben einen verhältnismäßig breiten Schnabel,
+                    dessen Ränder mit coolen Lamellen versehen sind.Ein Stockentenschnabel
+                    weist oberseits <b> 36 bis 54, unterseits 72 bis 80 Lamellen auf.
+                        Bei den Entenvögeln </b>, die sich von Kleinstlebewesen ernähren, dienen die Lamellen als Filterapparat.Durch den halb offenen Schnabel wird Wasser eingesaugt, das dann durch die Lamellen hinausgepresst wird. Oft finden sich Modifikationen der ursprünglichen Lamellenstruktur, so bei den Sägern, bei denen die Lamellen zu kleinen Zähnen umgebildet sind, die das Festhalten der Fischbeute erleichtern.Der Schnabel der Entenvögel ist oft bunt gefärbt, vor allem bei Männchen im Brutkleid nimmt er leuchtende Farben an. Der Oberschnabel hat eine verhornte Spitze.Er ist mit Tastsinneszellen dicht besetzt.. Auf dem Wasser werden die Enten von einem Luftpolster getragen.Die Luft befindet sich zwischen dem Daunengefieder.Die Deckfedern schließen die Daunen ab. Mit ihrem Fettpolster unter der Haut verhindert die eingeschlossene Luftschicht, dass der Körper der Ente auskühlt. </p>
+            </article>
+            <div class="centerOl">
+                <ol>
+                    <li> Kragenente </li>
+                    <li> <a href="#" onclick="alert('Hut ab');"> Seltene Reiherenten </a> </li>
+                    <li> Eiderente </li>
+                    <li> Löffelente </li>
+                </ol>
+                <ol type="I" style="margin-left:auto;color:indianred">
+                    <li> Schellente </li>
+                    <li> Spatelente </li>
+                    <li> Eisente </li>
+                    <li> <a href="#" onclick="alert('Hut ab');"> Pfeilente </a> </li>
+                </ol>
+            </div>
+            <aside>
+
+                <p>
+                    ei der Betrachtung der inneren Organe ist das vergrößerte Herz oft
+                    tauchender Enten auffällig.Der Muskelmagen ist bei den Gänsen vergrößert,
+                    um die faserhaltigen Pflanzen zerkleinern zu können;
+                    eine noch stärkere Vergrößerung
+                    findet man bei <a href="https://youtu.be/x2mQmKHgjUI"> Meerenten </a>, die Molluskenschalen aufnehmen. Die Pflanzenfresser unter den Entenvögeln haben zudem große Blinddärme.
+                </p>
+            </aside>
+        </section>
+        <footer> &copy; <em> 2019 Super Coole Enten <span class="dotfooter"> · </span> <a class="mobileLink" href="kontakt.html">Kontakt</a>
+                <span class="dotfooter"> · </span> <a class="mobileLink" href="impressum.html">Impressum</a>
+            </em> </footer>
+    </div>
+</body>
+
+</html>
