@@ -22,13 +22,18 @@
               onerror="this.onerror=null; this.src='img/trashbin.png'"
             />
           </a>
-
+          <h1 class="section1MobileNavTitle">
+            Trasher
+          </h1>
           <!-- onerror sets the src to a png instead of the svg for older browsers like IE 8 and Android 2.3 and below-->
-          <a href="#section1Main" class="navtextbuttons">Start</a>
-          <a href="#section2Service" class="navtextbuttons">Service</a>
-          <a href="#section3Kalendar" class="navtextbuttons">Kalendar</a>
-          <a href="#section4Shop" class="navtextbuttons">Shop</a>
-          <a href="#section5Contact" class="navtextbuttons">Contact</a>
+
+          <span id="section1NavBarLinksContainer">
+            <a href="#section1Main" class="navtextbuttons">Start</a>
+            <a href="#section2Service" class="navtextbuttons">Service</a>
+            <a href="#section3Kalendar" class="navtextbuttons">Kalendar</a>
+            <a href="#section4Shop" class="navtextbuttons">Shop</a>
+            <a href="#section5Contact" class="navtextbuttons">Contact</a>
+          </span>
           <a href="#section4Shop" class="navsymbolfloatright">
             <img
               src="svg/cart.svg"
@@ -37,6 +42,13 @@
               onerror="this.onerror=null; this.src='img/shoppingcart.png'"
             />
           </a>
+          <!-- Mobile nav button-->
+          <div id="nav-icon3">
+            <span class="mobilespan"></span>
+            <span class="mobilespan"></span>
+            <span class="mobilespan"></span>
+            <span class="mobilespan"></span>
+          </div>
         </nav>
       </div>
       <!-- ? Section 1 Main text area left beginning -->
@@ -340,7 +352,7 @@
     </div>
     <!-- !Section 5 beginning -->
     <div id="section5Contact">
-      <h2 class="section5ContactMainTitle">Talk To An Trash Expert</h2>
+      <h2 class="section5ContactMainTitle">Talk To A Trash Expert</h2>
       <div id="section5ContactMainContainerInside">
         <div class="section5ContactLeftContainer">
           <h3>Our Trash Pickup Schedule</h3>
@@ -405,6 +417,7 @@
               </div>
 
               <label
+                class="boringo"
                 for="message"
                 style="display:block;padding: 15px; margin-left: 30px "
                 >Your Message:</label

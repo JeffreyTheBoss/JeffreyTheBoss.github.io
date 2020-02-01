@@ -93,3 +93,43 @@ document.getElementById("section5Textarea").onfocus = function() {
   document.getElementById("section5Textarea").innerHTML = "";
   document.getElementById("section5Textarea").style.color = "black";
 };
+
+//mobile nav button to cross
+document.getElementById("section1NavBarLinksContainer").style.width = "0%";
+
+$(document).ready(function() {
+  $("#nav-icon3").click(function() {
+    if (
+      document.getElementById("section1NavBarLinksContainer").style.width ==
+      "0%"
+    ) {
+      document.getElementById("section1NavBarLinksContainer").style.paddingTop =
+        "55px";
+      document.getElementById("section1NavBarLinksContainer").style.width =
+        "100%";
+      document.getElementsByClassName("mobilespan")[0].style.backgroundColor =
+        "#bc5757";
+      document.getElementsByClassName("mobilespan")[1].style.backgroundColor =
+        "#bc5757";
+      document.getElementsByClassName("mobilespan")[2].style.backgroundColor =
+        "#bc5757";
+      document.getElementsByClassName("mobilespan")[3].style.backgroundColor =
+        "#bc5757";
+    } else {
+      document.getElementById("section1NavBarLinksContainer").style.paddingTop =
+        "0px";
+      document.getElementById("section1NavBarLinksContainer").style.width =
+        "0%";
+      document.getElementsByClassName("mobilespan")[0].style.backgroundColor =
+        "#1d1d1d";
+      document.getElementsByClassName("mobilespan")[1].style.backgroundColor =
+        "#1d1d1d";
+      document.getElementsByClassName("mobilespan")[2].style.backgroundColor =
+        "#1d1d1d";
+      document.getElementsByClassName("mobilespan")[3].style.backgroundColor =
+        "#1d1d1d";
+    }
+
+    $(this).toggleClass("open");
+  });
+});

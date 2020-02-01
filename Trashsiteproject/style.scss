@@ -18,7 +18,7 @@ html,
 body {
   max-width: 100%;
   //overflow auto does not work with position sticky on the nav
-  //overflow-x: hidden;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
@@ -30,7 +30,7 @@ body {
   width: 100%;
   margin: auto;
   // How to make a background-image somewhat responsive with a layer darker
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("img/mainbackground.jpg");
   background-size: cover;
   background-position: center center;
@@ -244,7 +244,7 @@ body {
 
 .section2MainContainerInside {
   background-color: $darkbackground;
-  border-radius: 50px;
+  border-radius: 20px;
   color: $lightbackground;
   padding: 50px;
   max-width: 600px;
@@ -656,8 +656,284 @@ body {
 }
 // start of media queries
 
-/*
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  */
+// Media Query for Section 1
+
+//Nav bar title mobile on default hidden visible on 700px sw below
+.section1MobileNavTitle {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  //background image beomes a darker layer opaiy on mobile to give the white text more shine
+  #section1Main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("img/mainbackground.jpg");
+  }
+  //start of mobile nav
+  .navtextbuttons {
+    display: block;
+  }
+  .navsymbolfloatright {
+    display: none;
+  }
+
+  .navsymbolfloatleft {
+    display: none;
+  }
+
+  .section1MobileNavTitle {
+    display: initial;
+    user-select: none;
+    color: $darkbackground;
+  }
+
+  #nav-icon3 {
+    width: 38px;
+    height: 40px;
+    float: right;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: $darkbackground;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon3 span:nth-child(2),
+  #nav-icon3 span:nth-child(3) {
+    top: 12px;
+  }
+
+  #nav-icon3 span:nth-child(4) {
+    top: 24px;
+  }
+
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  #nav-icon3.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  #nav-icon3.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  #section1NavBarLinksContainer {
+    width: 0%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+  }
+  //end of mobile nav
+
+  // start of section 1 main items
+  #section1MainTextAreaLeft {
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    color: $darkbackgroundlighter;
+  }
+
+  //the kalendar pop in
+  #section1MainKalendarPopIn {
+    top: 90px;
+    &:hover {
+      top: 85px;
+    }
+  }
+  //the bottom text
+  #section1MainBottomText {
+    bottom: 20px;
+  }
+
+  //start of section 2 mobile
+}
+
+@media only screen and (max-width: 1425px) {
+  //section 2 mobile arrow dissapear
+  #section2ArrowLineBetween {
+    display: none;
+  }
+  #section2rightarrow {
+    display: none;
+  }
+  #section2leftarrow {
+    display: none;
+  }
+
+  #section2ButtonContainer {
+    /*How to center a position absolute div*/
+    position: static;
+    padding: 20px 0px 50px 0px;
+    display: block;
+    .section2Button {
+      &:hover {
+        background-color: $mainColor;
+        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .section2MainContainerleft {
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+    margin: auto;
+    h2 {
+      padding-top: 50px;
+      font-size: 130%;
+    }
+  }
+
+  .section2MainContainerright {
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+    margin: auto;
+    h2 {
+      padding-top: 50px;
+      font-size: 130%;
+    }
+  }
+
+  .section2MainContainerInside {
+    padding: 30px;
+    margin: auto;
+    max-width: 350px;
+    h3 {
+      padding-bottom: 20px;
+      font-size: 20px;
+      margin-left: 0px;
+    }
+    ul {
+      .section2LiItem {
+        margin-left: 0px;
+        font-size: 15px;
+        padding: 0px;
+      }
+    }
+  }
+
+  .section2underlinediv {
+    margin: 10px auto 50px;
+  }
+
+  //section 3 mobile for kalendar area
+
+  #section3Kalendar {
+    min-height: 50vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: $darkbackground;
+  }
+
+  /* Section 3 Main Left Side Container*/
+
+  #section3KalendarLeftContainer {
+    float: none;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  /* Section 3 Main right side container*/
+
+  #section3KalendarRightContainer {
+    display: none;
+  }
+}
+
+//section 4
+
+@media only screen and (max-width: 1250px) {
+  .section4ShopButtonContainer {
+    padding-bottom: 100px;
+  }
+
+  //section 5
+  #section5ContactMainContainerInside {
+    .section5ContactLeftContainer {
+      padding: 10px 40px;
+      h3 {
+        padding: 20px;
+        font-size: 25px;
+      }
+      ul {
+        li {
+          padding: 15px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section5ContactRightContainer {
+      min-width: 450px;
+      margin: 50px 0px;
+      p {
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+      .fields {
+        font-size: 20px;
+        div {
+          padding: 15px;
+          label {
+            margin-left: 15px;
+          }
+          input[type="text"] {
+            padding: 8px;
+          }
+        }
+      }
+      textarea {
+        margin-left: 10px;
+      }
+      #section5ContactFormSubmitButton {
+        margin-bottom: 10px;
+        font-size: 22px;
+        &:hover {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
