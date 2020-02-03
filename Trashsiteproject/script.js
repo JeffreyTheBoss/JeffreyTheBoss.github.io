@@ -133,3 +133,29 @@ $(document).ready(function() {
     $(this).toggleClass("open");
   });
 });
+
+//section 3 kalendar on hover on the check out button the right clip path arrow changes color and moves
+
+$(document).ready(function() {
+  document.getElementById(
+    "section3KalendarCheckOutLink"
+  ).onmouseover = function() {
+    document.getElementById(
+      "section3KalendarArrowForButton"
+    ).style.backgroundColor = "#a14242";
+
+    document.getElementById("section3KalendarArrowForButton").style.marginLeft =
+      "20px";
+  };
+
+  document.getElementById(
+    "section3KalendarCheckOutLink"
+  ).onmouseout = function() {
+    document.getElementById(
+      "section3KalendarArrowForButton"
+    ).style.backgroundColor = "#bc5757";
+
+    document.getElementById("section3KalendarArrowForButton").style.marginLeft =
+      "0px";
+  };
+});

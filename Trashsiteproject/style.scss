@@ -392,6 +392,24 @@ body {
       color: white;
     }
   }
+
+  #section3KalendarArrowForButton {
+    display: inline-block;
+    margin-bottom: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: $mainColor;
+    transition: 0.2s ease-in-out;
+    clip-path: polygon(
+      0% 30%,
+      60% 30%,
+      60% 0%,
+      100% 50%,
+      60% 100%,
+      60% 70%,
+      0% 70%
+    );
+  }
 }
 
 /* Section 3 Main right side container*/
@@ -495,10 +513,20 @@ body {
       right: 10px;
       height: 0px;
       top: -250px;
+      color: $mainColor;
     }
     .section4ShopPictureContainerBottomText {
       position: relative;
-      bottom: 50px;
+      bottom: 55px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+      opacity: 0.8;
+      background-color: $darkbackground;
+      transition: 0.5s ease-in-out;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -648,6 +676,11 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    img {
+      &:hover {
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+      }
+    }
     a {
       text-decoration: none;
       margin: 30px;
@@ -935,5 +968,108 @@ body {
         }
       }
     }
+  }
+}
+
+// mobile for extreme small screens 400 px and below
+
+@media only screen and (max-width: 500px) {
+  #section1MainTextAreaLeft {
+    position: initial;
+    padding-top: 200px;
+    margin: auto;
+    width: 100%;
+    h1 {
+      font-size: 35px;
+      width: 100%;
+    }
+    h3 {
+      font-size: 20px;
+      width: 100%;
+      max-width: 450px;
+      margin: auto;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+//under 300 px the kalendar pop in dissapears
+@media only screen and (max-width: 300px) {
+  #section1MainKalendarPopIn {
+    display: none;
+  }
+  #section1MainTextAreaLeft {
+    padding-top: 100px;
+  }
+}
+// make the red chekmarks smaller on 350 px and below
+@media only screen and (max-width: 350px) {
+  .section2MainContainerInside {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// smaler font on the form to make it fit
+@media only screen and (max-width: 400px) {
+  #section5ContactMainContainerInside {
+    .section5ContactLeftContainer {
+      border-radius: 0px;
+    }
+    .section5ContactRightContainer {
+      min-width: 300px;
+      border-radius: 0px;
+      .fields {
+        font-size: 18px;
+        div {
+          padding: 10px;
+          label {
+            margin-left: 5px;
+          }
+          input[type="text"] {
+            padding: 8px;
+          }
+        }
+      }
+      textarea {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+//footer icons bit smaller at 475 px and below
+@media only screen and (max-width: 475px) {
+  .section6FooterSVGContainer {
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+//start of widescreen fixes
+
+@media only screen and (min-width: 1921px) {
+  //section 2 mobile arrow dissapear
+  #section2ArrowLineBetween {
+    display: none;
+  }
+  #section2rightarrow {
+    display: none;
+  }
+  #section2leftarrow {
+    display: none;
+  }
+
+  #section2ButtonContainer {
+    display: none;
+  }
+  #section1MainNavArea nav {
+    font-size: 60px;
   }
 }

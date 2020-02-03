@@ -421,6 +421,18 @@ body {
   color: white;
 }
 
+#section3KalendarLeftContainerButtonContainer #section3KalendarArrowForButton {
+  display: inline-block;
+  margin-bottom: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: #bc5757;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-clip-path: polygon(0% 30%, 60% 30%, 60% 0%, 100% 50%, 60% 100%, 60% 70%, 0% 70%);
+          clip-path: polygon(0% 30%, 60% 30%, 60% 0%, 100% 50%, 60% 100%, 60% 70%, 0% 70%);
+}
+
 /* Section 3 Main right side container*/
 #section3KalendarRightContainer {
   position: relative;
@@ -534,11 +546,24 @@ body {
   right: 10px;
   height: 0px;
   top: -250px;
+  color: #bc5757;
 }
 
 #section4Shop .section4ShopPictureContainer .section4ShopPictureContainerBottomText {
   position: relative;
-  bottom: 50px;
+  bottom: 55px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  opacity: 0.8;
+  background-color: #1d1d1d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#section4Shop .section4ShopPictureContainer .section4ShopPictureContainerBottomText:hover {
+  cursor: pointer;
 }
 
 #section4Shop .section4ShopButtonContainer {
@@ -723,6 +748,11 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#section6Footer .section6FooterSVGContainer img:hover {
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 #section6Footer .section6FooterSVGContainer a {
@@ -972,6 +1002,94 @@ body {
   }
   #section5ContactMainContainerInside .section5ContactRightContainer #section5ContactFormSubmitButton:hover {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #section1MainTextAreaLeft {
+    position: initial;
+    padding-top: 200px;
+    margin: auto;
+    width: 100%;
+  }
+  #section1MainTextAreaLeft h1 {
+    font-size: 35px;
+    width: 100%;
+  }
+  #section1MainTextAreaLeft h3 {
+    font-size: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+  }
+  #section1MainTextAreaLeft p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #section1MainKalendarPopIn {
+    display: none;
+  }
+  #section1MainTextAreaLeft {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .section2MainContainerInside svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #section5ContactMainContainerInside .section5ContactLeftContainer {
+    border-radius: 0px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer {
+    min-width: 300px;
+    border-radius: 0px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer .fields {
+    font-size: 18px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer .fields div {
+    padding: 10px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer .fields div label {
+    margin-left: 5px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer .fields div input[type="text"] {
+    padding: 8px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer textarea {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .section6FooterSVGContainer img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  #section2ArrowLineBetween {
+    display: none;
+  }
+  #section2rightarrow {
+    display: none;
+  }
+  #section2leftarrow {
+    display: none;
+  }
+  #section2ButtonContainer {
+    display: none;
+  }
+  #section1MainNavArea nav {
+    font-size: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
