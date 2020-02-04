@@ -158,4 +158,100 @@ $(document).ready(function() {
     document.getElementById("section3KalendarArrowForButton").style.marginLeft =
       "0px";
   };
+
+  //change the color of the shopping wheel svg to $mainColor on hover
+  document.getElementById(
+    "section1NavBarShoppingCartIcon"
+  ).onmouseover = function() {
+    document.getElementById("section1NavBarShoppingCartIcon").src =
+      "svg/carthover.svg";
+  };
+
+  document.getElementById(
+    "section1NavBarShoppingCartIcon"
+  ).onmouseout = function() {
+    document.getElementById("section1NavBarShoppingCartIcon").src =
+      "svg/cart.svg";
+  };
+
+  //make the binman dunk the paper in the trash can poor animation for poor people lazy alot "animation" eeyyy lamo
+  document.getElementById("section1NavBarBinManIcon").onmouseover = function() {
+    document.getElementById("section1NavBarBinManIcon").src =
+      "svg/trashhover.svg";
+  };
+
+  document.getElementById("section1NavBarBinManIcon").onmouseout = function() {
+    document.getElementById("section1NavBarBinManIcon").src = "svg/trash.svg";
+  };
+
+  // footer svg hover
+  document.getElementById("section6FooterSVGTwitter").onmouseover = function() {
+    document.getElementById("section6FooterSVGTwitter").src =
+      "svg/twitterhover.svg";
+  };
+
+  document.getElementById("section6FooterSVGTwitter").onmouseout = function() {
+    document.getElementById("section6FooterSVGTwitter").src = "svg/twitter.svg";
+  };
+
+  document.getElementById(
+    "section6FooterSVGFacebook"
+  ).onmouseover = function() {
+    document.getElementById("section6FooterSVGFacebook").src =
+      "svg/facebookhover.svg";
+  };
+
+  document.getElementById("section6FooterSVGFacebook").onmouseout = function() {
+    document.getElementById("section6FooterSVGFacebook").src =
+      "svg/facebook.svg";
+  };
+
+  document.getElementById(
+    "section6FooterSVGInstagram"
+  ).onmouseover = function() {
+    document.getElementById("section6FooterSVGInstagram").src =
+      "svg/instagramhover.svg";
+  };
+
+  document.getElementById(
+    "section6FooterSVGInstagram"
+  ).onmouseout = function() {
+    document.getElementById("section6FooterSVGInstagram").src =
+      "svg/instagram.svg";
+  };
+
+  //cookies for increasing customer count for every individual user
+
+  if (parseInt(getCookie("value")) >= 6) {
+    let bottomTextCounter = parseInt(getCookie("value"));
+    bottomTextCounter++;
+    document.getElementById(
+      "section1BottomTextCounter"
+    ).innerHTML = bottomTextCounter;
+    document.cookie =
+      "value=" +
+      bottomTextCounter +
+      ";" +
+      "expires=Thu, 18 Dec 2023 12:00:00 UTC";
+  } else {
+    //setting the cookie once when its not set yet
+    document.cookie = "value=6; expires=Thu, 18 Dec 2023 12:00:00 UTC";
+  }
 });
+
+// function to get the integer value of a cookie
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
