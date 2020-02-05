@@ -39,7 +39,7 @@ body {
 
 #section1MainNavArea a {
   text-decoration: none;
-  color: black;
+  color: #dfdfdf;
 }
 
 #section1MainNavArea .navsymbolfloatright {
@@ -71,8 +71,15 @@ body {
 }
 
 #section1MainNavArea .navtextbuttons:hover {
+  color: #1d1d1d;
+}
+
+#section1MainNavArea .Dbubble {
+  position: absolute;
+  z-index: -2;
   background-color: #bc5757;
-  color: #dfdfdf;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #section1MainNavArea.scrolled {
@@ -1142,6 +1149,17 @@ body {
   }
   .section4ShopButtonContainer {
     padding-bottom: 100px;
+  }
+}
+
+/*retard coding alert !this is here only because it needs to override the height media query whih fuks things up silence if u here
+  you fucked up dont read this
+*/
+@media only screen and (max-width: 1425px) {
+  #section3KalendarLeftContainer {
+    float: none;
+    margin: auto;
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -219,25 +219,25 @@ $(document).ready(function() {
     document.getElementById("section6FooterSVGInstagram").src =
       "svg/instagram.svg";
   };
-
-  //cookies for increasing customer count for every individual user
-
-  if (parseInt(getCookie("value")) >= 6) {
-    let bottomTextCounter = parseInt(getCookie("value"));
-    bottomTextCounter++;
-    document.getElementById(
-      "section1BottomTextCounter"
-    ).innerHTML = bottomTextCounter;
-    document.cookie =
-      "value=" +
-      bottomTextCounter +
-      ";" +
-      "expires=Thu, 18 Dec 2023 12:00:00 UTC";
-  } else {
-    //setting the cookie once when its not set yet
-    document.cookie = "value=6; expires=Thu, 18 Dec 2023 12:00:00 UTC";
-  }
 });
+
+//cookies for increasing customer count for every individual user
+
+if (parseInt(getCookie("value")) >= 6) {
+  let bottomTextCounter = parseInt(getCookie("value"));
+  bottomTextCounter++;
+  document.getElementById(
+    "section1BottomTextCounter"
+  ).innerHTML = bottomTextCounter;
+  document.cookie =
+    "value=" +
+    bottomTextCounter +
+    ";" +
+    "expires=Thu, 18 Dec 2023 12:00:00 UTC";
+} else {
+  //setting the cookie once when its not set yet
+  document.cookie = "value=6; expires=Thu, 18 Dec 2023 12:00:00 UTC";
+}
 
 // function to get the integer value of a cookie
 function getCookie(cname) {
@@ -255,3 +255,50 @@ function getCookie(cname) {
   }
   return "";
 }
+
+//nav transition on scroll into new section
+const section_1 = document.getElementById("section1Main");
+const section_2 = document.getElementById("section2Service");
+const section_3 = document.getElementById("section3Kalendar");
+const section_4 = document.getElementById("section4Shop");
+const section_5 = document.getElementById("section5Contact");
+
+const sections = [section_1, section_2, section_3, section_4, section_5];
+
+const bubble = document.querySelector(".Dbubble");
+
+const options = {
+  threshold: 0.7
+};
+
+let observer = new IntersectionObserver(navCheck, options);
+
+function navCheck(entries) {
+  entries.forEach(entry => {
+    const className = entry.target.className;
+    const activeAnchor = document.querySelector(`[data-page=${className}]`);
+    const coords = activeAnchor.getBoundingClientRect();
+    const directions = {
+      height: coords.height,
+      width: coords.width,
+      top: coords.top,
+      left: coords.left
+    };
+    if (entry.isIntersecting && window.outerWidth >= 700) {
+      bubble.style.setProperty("left", `${directions.left}px`);
+      bubble.style.setProperty("top", `${directions.top}px`);
+      bubble.style.setProperty("width", `${directions.width}px`);
+      bubble.style.setProperty("height", `${directions.height}px`);
+    }
+  });
+}
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+document.getElementsByTagName("BODY")[0].onresize = function() {
+  bubble.style.setProperty("left", `0px`);
+  bubble.style.setProperty("top", `0px`);
+  bubble.style.setProperty("width", `0px`);
+  bubble.style.setProperty("height", `0px`);
+};

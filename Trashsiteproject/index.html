@@ -10,11 +10,11 @@
 
   <body>
     <!-- !Section 1 beginning -->
-    <div id="section1Main">
+    <div id="section1Main" class="Dstart">
       <!-- ? Section 1 NavArea Beginning -->
       <div id="section1MainNavArea">
         <nav>
-          <a href="#section1Main" class="navsymbolfloatleft">
+          <a href="#section1Main" class="navsymbolfloatleft" title="Start">
             <img
               src="svg/trash.svg"
               width="40px"
@@ -29,11 +29,12 @@
           <!-- onerror sets the src to a png instead of the svg for older browsers like IE 8 and Android 2.3 and below-->
 
           <span id="section1NavBarLinksContainer">
-            <a href="#section1Main" class="navtextbuttons">Start</a>
-            <a href="#section2Service" class="navtextbuttons">Service</a>
-            <a href="#section3Kalendar" class="navtextbuttons">Kalendar</a>
-            <a href="#section4Shop" class="navtextbuttons">Shop</a>
-            <a href="#section5Contact" class="navtextbuttons">Contact</a>
+            <a href="#section1Main" data-page="Dstart" class="navtextbuttons">Start</a>
+            <a href="#section2Service" data-page="Dservice" class="navtextbuttons">Service</a>
+            <a href="#section3Kalendar" data-page="Dkalendar" class="navtextbuttons">Kalendar</a>
+            <a href="#section4Shop" data-page="Dshop" class="navtextbuttons">Shop</a>
+            <a href="#section5Contact" data-page="Dcontact"class="navtextbuttons">Contact</a>
+            <div class="Dbubble"></div>
           </span>
           <a href="#section4Shop" class="navsymbolfloatright">
             <img id="section1NavBarShoppingCartIcon"
@@ -81,7 +82,7 @@
       </div>
     </div>
     <!-- !Section 2 beginning -->
-    <div id="section2Service">
+    <div id="section2Service" class="Dservice">
       <!-- ? Section 2 The main Container on the left-->
       <div class="section2MainContainerleft">
         <h2>Our Normal Trash Pickup Service</h2>
@@ -249,7 +250,7 @@
       </div>
     </div>
     <!-- !Section 3 beginning -->
-    <div id="section3Kalendar">
+    <div id="section3Kalendar" class="Dkalendar">
       <!-- ? Section 3 The main left side container-->
       <div id="section3KalendarLeftContainer">
         <h2>Our New Kalendar</h2>
@@ -297,7 +298,7 @@
       </div>
     </div>
     <!-- !Section 4 beginning -->
-    <div id="section4Shop">
+    <div id="section4Shop" class="Dshop">
       <div class="section4ShopTitleContainer">
         <h2>Trash Shop</h2>
         <div class="section2underlinediv"></div>
@@ -353,7 +354,7 @@
       </div>
     </div>
     <!-- !Section 5 beginning -->
-    <div id="section5Contact">
+    <div id="section5Contact" class="Dcontact">
       <h2 class="section5ContactMainTitle">Talk To A Trash Expert</h2>
       <div id="section5ContactMainContainerInside">
         <div class="section5ContactLeftContainer">
