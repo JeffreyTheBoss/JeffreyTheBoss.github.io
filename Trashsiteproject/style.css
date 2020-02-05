@@ -381,6 +381,7 @@ body {
   margin: auto;
   text-align: center;
   background-color: #1d1d1d;
+  overflow: hidden;
 }
 
 /* Section 3 Main Left Side Container*/
@@ -1090,6 +1091,57 @@ body {
   }
   #section1MainNavArea nav {
     font-size: 60px;
+  }
+}
+
+/* some height fixes for smaller height viewports */
+@media only screen and (max-height: 900px) {
+  #section2ArrowLineBetween {
+    display: none;
+  }
+  #section2rightarrow {
+    display: none;
+  }
+  #section2leftarrow {
+    display: none;
+  }
+  #section2ButtonContainer {
+    position: static;
+    padding: 0px 0px 50px 0px;
+    display: block;
+  }
+  #section2ButtonContainer .section2Button:hover {
+    background-color: #bc5757;
+    -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+  }
+  #section5ContactMainContainerInside .section5ContactLeftContainer {
+    margin-bottom: 50px;
+  }
+  #section5ContactMainContainerInside .section5ContactRightContainer {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #section1MainTextAreaLeft {
+    top: 100px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  #section1MainBottomText {
+    bottom: 20px;
+  }
+  #section3KalendarRightContainer {
+    top: 50px;
+  }
+  #section3KalendarLeftContainer {
+    margin: 100px 150px 0px 100px;
+  }
+  .section4ShopButtonContainer {
+    padding-bottom: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
