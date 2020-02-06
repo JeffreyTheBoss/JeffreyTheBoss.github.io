@@ -901,7 +901,6 @@ body {
     /*How to center a position absolute div*/
     position: static;
     padding: 20px 0px 50px 0px;
-    display: block;
   }
   #section2ButtonContainer .section2Button:hover {
     background-color: #bc5757;
@@ -972,6 +971,8 @@ body {
   }
   #section5ContactMainContainerInside .section5ContactLeftContainer {
     padding: 10px 40px;
+    height: 450px;
+    margin-top: 50px;
   }
   #section5ContactMainContainerInside .section5ContactLeftContainer h3 {
     padding: 20px;
@@ -1018,7 +1019,7 @@ body {
     position: initial;
     padding-top: 200px;
     margin: auto;
-    width: 100%;
+    width: 80%;
   }
   #section1MainTextAreaLeft h1 {
     font-size: 35px;
@@ -1128,12 +1129,6 @@ body {
   }
   #section5ContactMainContainerInside .section5ContactRightContainer {
     margin-bottom: 50px;
-  }
-}
-
-@media only screen and (max-height: 600px) {
-  #section1MainTextAreaLeft {
-    top: 100px;
   }
 }
 

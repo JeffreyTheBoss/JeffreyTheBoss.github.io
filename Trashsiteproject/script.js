@@ -284,7 +284,11 @@ function navCheck(entries) {
       top: coords.top,
       left: coords.left
     };
-    if (entry.isIntersecting && window.outerWidth >= 700) {
+    if (
+      entry.isIntersecting &&
+      window.outerWidth >= 1234 &&
+      window.outerHeight >= 760
+    ) {
       bubble.style.setProperty("left", `${directions.left}px`);
       bubble.style.setProperty("top", `${directions.top}px`);
       bubble.style.setProperty("width", `${directions.width}px`);
@@ -296,6 +300,7 @@ function navCheck(entries) {
 sections.forEach(section => {
   observer.observe(section);
 });
+
 document.getElementsByTagName("BODY")[0].onresize = function() {
   bubble.style.setProperty("left", `0px`);
   bubble.style.setProperty("top", `0px`);
