@@ -221,6 +221,41 @@ $(document).ready(function() {
   };
 });
 
+//sleep function works only in async
+function Sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+// scramble function onload for aethstetics on the mainleftside text area in section 1
+
+async function scrambleTextAnimation(
+  repeat,
+  className,
+  classInstances,
+  timeBetween
+) {
+  //gather initial text
+  let initialText = [];
+  for (let b = 0; b < classInstances; b++) {
+    initialText[b] = document.getElementsByClassName(className)[b].innerHTML;
+  }
+  for (let i = 0; i < repeat; i++) {
+    for (let a = 0; a < classInstances; a++) {
+      let text = document.getElementsByClassName(className)[a].innerHTML;
+      text = shuffle(text);
+      document.getElementsByClassName(className)[a].innerHTML = text;
+    }
+    timeBetween += 8;
+    await Sleep(timeBetween);
+  }
+  for (let b = 0; b < classInstances; b++) {
+    document.getElementsByClassName(className)[b].innerHTML = initialText[b];
+  }
+}
+$(document).ready(function() {
+  scrambleTextAnimation(38, "scrambleAnimation", 4, 0);
+});
+
 //cookies for increasing customer count for every individual user
 
 if (parseInt(getCookie("value")) >= 6) {
@@ -237,6 +272,7 @@ if (parseInt(getCookie("value")) >= 6) {
 } else {
   //setting the cookie once when its not set yet
   document.cookie = "value=6; expires=Thu, 18 Dec 2023 12:00:00 UTC";
+  document.getElementById("section1BottomTextCounter").innerHTML = 6;
 }
 
 // function to get the integer value of a cookie
