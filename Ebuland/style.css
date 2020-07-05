@@ -18,6 +18,10 @@ body {
 }
 
 #sectionOne {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background: -webkit-gradient(linear, left top, right top, from(#d9a7c7), to(#fffcdc));
   background: linear-gradient(to right, #d9a7c7, #fffcdc);
   -webkit-clip-path: polygon(0 0, 100% 0, 89% 68%, 13% 87%);
@@ -35,6 +39,20 @@ body {
 
 #sectionOne nav li {
   padding: 0px 5px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.social:hover {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  #sectionOne {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 #sideBorderParagraph {
@@ -42,6 +60,14 @@ body {
   height: 28px;
   padding-left: 10px !important;
   margin-left: 10px;
+}
+
+#sideBorderParagraph a {
+  color: black;
+}
+
+#sideBorderParagraph a:hover {
+  color: #5c5b5b;
 }
 
 #test {

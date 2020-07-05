@@ -10,6 +10,7 @@ $darkbackground: #262529;
     box-sizing: border-box;
 }
 
+
 a
 {
     text-decoration: none;
@@ -25,6 +26,7 @@ background-color: $darkbackground;
 
 #sectionOne
 {
+    user-select: none;
     background: linear-gradient(to right, #d9a7c7, #fffcdc);
     clip-path: polygon(0 0, 100% 0, 89% 68%, 13% 87%);
     min-height: 100vh;
@@ -37,9 +39,27 @@ background-color: $darkbackground;
         padding-right: 30px;
         li{
             padding: 0px 5px;
+            transition: 0.2s ease-in-out;
         }
     }
 
+}
+
+.social
+{
+    &:hover
+    {
+        transform: rotate(25deg);
+    }
+}
+
+//removes the shape of the section 1 background on smaller devices
+@media only screen and (max-width: 1000px)
+{
+    #sectionOne
+    {
+        clip-path: none;
+    }
 }
 
 #sideBorderParagraph
@@ -48,6 +68,13 @@ background-color: $darkbackground;
     height: 28px;
     padding-left: 10px !important;
     margin-left: 10px;
+    a{
+        color: black;
+    &:hover
+    {
+        color: rgb(92, 91, 91);
+    }
+}
 }
 
 #test
