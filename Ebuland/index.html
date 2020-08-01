@@ -8,7 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <!--smtp for mailing-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <link rel="shortcut icon" type="image/x-icon" href="fav.svg">
         <title>Manfred Ebuland</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,57 +23,204 @@
         <![endif]-->
 
         <!-- !SECTION 1-->
-        <section id="sectionOne">
-            <div>
-                <nav>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item social">
-                            <a href="#">
-                                <img src="resources/svg/facebook.svg" width="26px" height="26px" />
-                            </a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#">
-                                <img src="resources/svg/github.svg" width="26px" height="26px"/>
-                            </a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#">
-                                <img src="resources/svg/twitter.svg" width="26px" height="26px"/>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="sideBorderParagraph">
-                            <a href="#" >
-                               <p >Contact</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <nav class="fixed-top" style="z-index: 100;">
+            <ul class="nav justify-content-end">
+                <li class="nav-item social">
+                    <a href="https://facebook.com/manni.manfred.102">
+                        <img src="resources/svg/facebook.svg" width="32px" height="32px" />
+                    </a>
+                </li>
+                <li class="nav-item social">
+                    <a href="https://github.com/getmanfred">
+                        <img src="resources/svg/github.svg" width="32px" height="32px"/>
+                    </a>
+                </li>
+                <li class="nav-item social">
+                    <a href="https://twitter.com/manfredweber">
+                        <img src="resources/svg/twitter.svg" width="32px" height="32px"/>
+                    </a>
+                </li>
+                <li class="nav-item" id="sideBorderParagraph">
+                    <!--  
+                    <a href="#" >
+                       <p class="btn btn-secondary">Contact</p>
+                    </a>
+                -->
 
-            <div id="test">
+                <div class="dropdown">
+                    <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Contact
+                    </button>
+
+                    <div class="dropdown-menu" >
+
+                        <form class="px-3 py-3" onsubmit="return sendMail(this)">
+
+                          <div class="form-group">
+                            <label for="text">Ask a spiritual question you wont regret</label>
+                            
+                            <textarea id="text"name="text" cols="35" rows="4" placeholder="message..."></textarea> 	
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                          </div>
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-secondary">Send</button>
+                            </div>
+                         
+                        </form>
+                      </div>
+                  </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="sectionOne">
+            <div id="informationbox">
                 <div>
-                    <img src="https://via.placeholder.com/200x200" class="rounded-circle"/>
+                    <img src="/Ebuland/resources/img/ebulandmainpicture.png" width="200px" height="200px" class="rounded-circle"/>
                 </div>
                 <div class="font-weight-bold">
                     <h1>Ebuland Manfred</h1>
-                    <p>husband, child, lover of the sun</p>
+                    <p>husband, trans, lover of the sun</p>
                     <p>الماعز هي المفضلة لدي</p>
                     <p>profesional cow milker</p>
                 </div>
             </div>
         </section>
-        <section style="height: 100vh;">
+        <!-- !SECTION 1-->
+
+        <!-- !SECTION 2-->
+        <section  id="sectionTwo" class="container-fluid">
+            <div class="titlecard">
+                <h2>Restoration</h2>
+                <p>of used leg prothesis</p>
+            </div>
+
+            <div class="protesiscontainer">
+                <div class="protesisprogresschart chart1">
+                    
+                    <img src="resources/img/leg1.png" width="300px" height="300px" />
+                    <div>                 
+                        <h3>Step 1<span class="sentencedot">.</span></h3>
+                        <p>Taking measures very precisely.
+                            The goal of this step is to get all the data of the used leg 
+                            and setup the prothesis progress accordingly.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="protesisprogresschart chart2">
+                    <img src="resources/img/leg2.jpg" width="300px" height="300px" />
+                    <div>
+                    <h3>Step 2<span class="sentencedot">.</span></h3>
+                    <p> Refurnishing and reinstating the used protesis to almost a factory new state.
+                        Very high focus and elementar knowledge is needed to handle the legs.
+                    </p>
+                     </div>
+                </div>
+                <div class="protesisprogresschart chart3">
+                    <img src="resources/img/leg3.jpg" width="300px" height="300px"/>
+                    <div>
+                        <h3>Step 3<span class="sentencedot">.</span></h3>
+                        <p>Calibrating correctly to avoid grievous mistakes.</p>
+                    </div>
+
+                </div>
+                <div class="protesisprogresschart chart4">
+                    <img src="resources/img/leg4.png" width="300px" height="300px"/>
+                    <div>
+                        <h3>Step 4<span class="sentencedot">.</span></h3>
+                        <p> Fitting in the finished product and making sure it feels amazing to the wearer.
+                            My personal goal is to have no uncomfortable leg prothesis on no missing leg.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="protesisbutton">
+                    <a href="leg.html" class="btn btn-warning">Restoration Progress</a>
+                </div>
+            </div>
+            
+        </section>
+         <!-- !SECTION 2-->
+
+         <!-- !SECTION 3-->
+         <section id="sectionthree">
+            <div id="lightBox" class="light-box"></div>
+             <h2>Family Reunion 2016</h2>
+
+             <div class="hoverelement unitOne">   
+             </div>
+             <div id="inside">
+                <h3 id="insideh3"> name , age</h3>
+                <p id="insideP"> is a very good goat licker</p>
+             </div>
+             <div class="hoverelement unitTwo">
+            </div>
+            <div class="hoverelement unitThree">
+            </div>
+            <div class="hoverelement unitFour">
+            </div>
+            <div class="hoverelement unitFive">
+            </div>
+            <div class="hoverelement unitSix">
+            </div>
+            <div class="hoverelement unitSeven">
+            </div>
+            <div class="hoverelement unitEight">
+            </div>
+            <div class="hoverelement unitNine">
+            </div>
+            <div class="hoverelement unitTen">
+            </div>
+            <div class="hoverelement unitEleven">
+            </div>
+         </section>
+          <!-- !SECTION 3-->
+            <!-- !SECTION 4-->
+         <section id="sectionfour">
+            
+            <h2>Private Imam Church <br> Come Visit us!</h2>
+            <img src="resources/img/church2.jpg" width="1200px" height="600px" />
+
+            <div id="sectionFourWrapper">
+            <div id="timetable">
+                <h2>Visiting Hours:</h2>
+                <p>Monday 9-5</p>
+                <p>Tuesday 9-5</p>
+                <p>Wednesday 11-3</p>
+                <p>Thursday 8-6</p>
+                <p>Friday - closed</p>
+                <p>Saturday & Sunday 24/7</p>
+            </div>
+
+            <div> 
+                <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.2579149294397!2d90.47750331547819!3d27.430071744228346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI1JzQ4LjIiTiA5MMKwMjgnNDYuOSJF!5e0!3m2!1sde!2sde!4v1595761286227!5m2!1sde!2sde"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            </div>
 
         </section>
-        <!-- !SECTION 1-->
+         <!-- !SECTION 4-->
+
+         <!-- !SECTION 5-->
+         <section id="footer">
+            <em>© 2020 Ebuland</em>
+         </section>
+         <!-- !SECTION 5-->
+
+
         
-        <script src="" async defer></script>
+        <script src="app.js" async defer></script>
+        
 
          <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+         
+</body>
 </html>

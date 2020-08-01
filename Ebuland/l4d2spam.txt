@@ -1,0 +1,352 @@
+Do not heal bots or give them pills or adrenaline. They will waste their health anyway
+Do not allow bots to heal with a medkit. Kill them if you must or switch to them with your vocalizer by going idle and selecting the survivor in question. Bots will heal at a certain threshold so to prevent this, just heal the survivor with the currently lowest health, even if their bar is green
+Don't kill bots of idle players
+You can use this vocalizer which has an idle and survivor change option tied to a single key:
+(it's also pretty much the best and most extensive vocalizer around)
+You can also do this with the following command if you go idle: jointeam 2 ellis
+You can replace ellis with any other of the survivors
+Use pills and adrenaline before a medkit since they are more plentiful
+Use adrenaline when filling up the gas tank on Dead Center and The Passing finales. Anyone who isn't under the effects of adrenaline should give the one who's filling the gas cans 
+Use adrenaline when a witch/tank chases you in water
+Before a rush event, heal if you're around 40 health and you don't have pills or adrenaline 
+Do not exhaust all medkits in the saferoom when your entire team has a medkit. Keep 1-2 behind in case someone gets unlucky early in the level
+Do not heal when you're close to the saferoom if not absolutely necessary. I've had lots of times where a sudden unlucky event costs you all your fresh new health
+You can heal yourself and revive someone at the same time if you press the buttons simultaneously, but beware of this since this has proven to give the player being revived a black screen
+You can stop a bot or teammate from healing you by going idle
+You can also stop a bot from healing you by pulling out any healing item
+When at the end of a level one or more survivors are below 50 health, you can kill them for a free refill to 50 and sometimes full health (on some levels)
+If you want to save your secondary, grab a different secondary before dying and pick it up again after being defibrillated or respawned
+Do not take a defibrillator with you if it's not realism or for the finale, if you can take a kit instead. Two exceptions are Dark Carnival level 4 and Cold Stream level 2 due the low amount of respawn closets 
+Only kill and defibrillate a teammate if the entire team is low on health. Otherwise just kill them and use respawn closets
+Communicate before killing and defibrillating someone as it may be perceived as trolling at first sight. Same goes for killing someone at the end of a level
+If you go idle near a downed teammate, the bot will (usually) target them and help them up. The benefit of this is that it doesn't matter that the downed teammate is getting hurt from zombies meanwhile
+If someone is downed in the edge of a fire, try to help them immediately before they die to it
+Don't try to save someone if you're positive you'll risk getting downed yourself. In hordes it's often too dangerous to give up your safe location to help a downed player. Half the time you'll end up getting downed yourself, so force yourself not to. Just try and protect them from attacking zombies
+If you have around 50 green health, you can drown yourself and then take pills/adrenaline. Wait for the bar to almost deplete and then surface again. Your health will now rise depending on how much damage you've taken. Example: you had 40 HP, drowned yourself and took pills, total damage approximately 80 means you'll rise to 120 HP. And yes, green health
+This trick is very situational as not many levels have water deep enough to drown you in
+While shotguns (both pump and automatic) are easily the most dangerous weapons for friendly fire, the assault and sniper rifles don't follow far behind. Deagle and pistols are not as dangerous and melee weapons barely at all. The grenade launcher is also not as dangerous as you may expect
+Don't move through someone, both from behind or moving backwards while shooting in front of you. This makes it the fault of the one being shot
+If someone is at 1 HP but does not have a grey screen yet and you don't have any healing items, you can incap and revive them for 30 more temporary HP but more importantly, more speed
+Don't sit and shoot in doorways, passages, etc. where your team has to go through
+Be careful when you're in close proximity to teammates. When you're close, the outlines don't show and you may easily momentarily confuse them for zombies
+In order of importance: bile bomb > molotov > pipe bomb 
+Careful when throwing items underneath teammates (e.g. on a ladder). Just like the grenade launcher, throwables can send them flying too
+If you still have a bot instead of a player, you can switch to them to make them pick something up
+Bile bombs are valuable and have a strong effect. Treat them accordingly and don't just throw without thinking
+Save a bile bomb in the early campaign for the following chapters which have events where you have to go in the direction the zombies are coming from:
+The Passing level 2
+Dark Carnival level 4
+If you have two, use one for level 3
+The Parish finale
+Death Toll level 4
+Dead Air level 4
+Cold Stream level 2 
+Cold Stream finale
+If you throw it far away, zombies will just stand around rather than going for it 
+Do not throw bile bombs if there are only a handful of zombies around since it will spawn more
+Do not throw bile bombs on tanks unless it's The Sacrifice level 1
+Do not throw bile bombs on witches
+Bounce a pipebomb on the ground as to make it lose momentum and collect more zombies in the explosion
+Do not stand too close when it's about to go off. Not because of the damage but because it can momentarily stun you
+The main priority for using a molotov is to burn the tank. Try to not use it for anything else if the tank has not yet been
+If in a horde zombies are coming from two sides, burn off one side
+Do not stand near a fire in fear of getting charged or smoked through it
+For the finale, always make sure your team has at least 2 molotovs for the tanks
+Be careful near fire: sometimes it suddenly spreads out a little
+If you can shoot instead, then shoot. Bullets and shells have infinitely more consistency in hitting your target than melee weapons 
+Sharp melee weapons > blunt melee weapons
+This does not count for the Counter Strike knife, which has a stupidly small arc of effectiveness
+Blunt weapons are slower and more fidgety than sharp weapons, increasing the chance of getting hit 
+Sharp weapons can cut smoker tongues
+Any melee weapon besides the chainsaw can level chargers
+If you're one of those tank burger machos, take the tonfa, the fastest melee weapon 
+The crowbar is a sharp weapon
+Take a melee weapon when you have to rush through zombies in an event. Any crappy melee weapon is better than having a pistol which needs to reload
+Every melee weapon, with exception of the chainsaw, deals identical damage, with the only differences being swing speed, hit rays and it being sharp or blunt 
+On expert you need 4 melee hits to kill a witch 
+When playing realism, take a melee weapon (or deagle) and treat it almost as a primary
+The chainsaw is actually one of the best melee weapons, despite some players who speak of the contrary
+The chainsaw can cut smoker tongues when revved up, even after you're being grabbed
+When switching to the chainsaw, instantly do a single bash with it to shorten the deploy time
+When about to run out of gas for the chainsaw, grab a different secondary. Any secondary is better than just 1 weak pistol. If there's nothing but a pistol nearby, deplete the chainsaw and then grab the pistol for dual pistols 
+You can hold the chainsaw in an upwards angle and just let jockeys and hunters leap into it for an instant kill
+The chainsaw can destroy canisters (gas, oxygen and propane) so be careful
+The chainsaw stays revved up when helping up teammates
+The chainsaw can kill riot zombies from any angle
+People often mention to be very careful of friendly fire with the chainsaw but compared to the damage any gun does to your teammates, it's nothing much to worry about
+Deagle > dual pistols. No arguing about it is necessary. 8 shots that are a one-hit-kill on every type of both common and uncommon infected (except riot zombies from the front) plus penetration power
+The only time you should take dual pistols is when there's no deagle around
+The deagle is a must on realism
+The deagle can kill the weaker special infected with a single headshot
+The accuracy of pistols is pretty bad, so try not to move too much when using them. You can snipe with the deagle by crouching
+The manual reload of the pistol, dual pistols and deagle can all be cancelled without leaving it with an empty clip, opposed to primary weapon
+With dual pistols, try to land headshots as the low damage, fire rate and clip size is enough for only a handful of zombies
+When using dual pistols, use a fast fire script/addon or your mousewheel to increase fire rate and save your hand from RSI:
+bind "mwheelup" "+attack"
+bind "mwheeldown" "+attack"
+Do you feel lucky?
+The wooden shotgun has more pellets that do less damage per pellet in a bigger spread while the chrome shotgun has less pellets that do more damage per pellet in a tighter spread
+In other words, the wooden shotgun is better for short range and the chrome shotgun is better for medium range. These differences between the wooden and chrome shotgun are noticeable but minor
+Even pump shotguns can crown a witch in 1 shot if the technique is executed correctly
+A useful tactic is to bash immediately after each shot. This both shoves away zombies and diminishes the pump time. Try to limit doing so to 3-4 times in a row to cool down the bash
+Pump shotguns are viable for every campaign from begin to end (given you are skilled enough), even on expert realism. Even though autoshotguns are better in almost every way, pump shotguns remain useful for their great crowd control and penetration power
+Incendiary ammo is very great for crowd control if you use it from medium range as it sets crowds of zombies on fire
+Explosive ammo is lethal for every shotgun since 1 single hit on yourself up close can drain all your health and that of someone else, like when you pass through someone or vice versa. Use it with great caution, especially in tight situations 
+Pump shotguns do not benefit from lasers that much
+The unsilenced SMG (UZI) is slightly more accurate but less powerful. The silenced SMG (MAC-10) is the opposite of that
+The silenced SMG is the weapon of choice in many early VS games
+Avoid the MP5, it sucks 
+Incendiary ammo is great for SMGs since you can set 50 commons on fire = 50 kills from a single clip. Just tap fire or use your scroll wheel (see the bind in the Pistols section)
+You can also use this trick to continuously set a tank on fire in the absence of other fire sources. See the Tank section for more information
+Explosive ammo is relatively safe for SMGs opposed to shotguns. Just fire in small bursts near zombies and use it to stun special infected
+A laser sight is a must, since it turns SMGs into a headshot machine
+The tactical shotgun has more pellets that do less damage per pellet in a bigger spread while the combat shotgun has less pellets that do more damage per pellet in a tighter spread
+Just like with the pump shotguns, the tactical shotgun is better for short range and the combat shotgun is better for medium range. These differences between the tactical and combat shotgun are noticeable but minor
+One difference that is quite noticeable is that the first shell being loaded into the tactical shotgun takes a little longer than the following shells
+You can safely consider them both as direct upgrades from the pump shotguns
+Autoshotguns do not benefit from lasers that much
+AK-47 > Desert Rifle > M16 / SG552
+Assault rifles are great all-round, especially when fired whilst crouched, and can quickly level hordes and tanks. Their usefulness goes from close to long range, making them versatile weapons. The only real drawback is that they are not that good for crowd control
+There's not much else to say on assault rifles. They're pretty average and never really a bad idea to pick up
+One exception would be in rushes since you need multiple shots per zombie and being on the move is not beneficial for your accuracy
+All sniper rifles have infinite penetration
+All sniper rifles benefit greatly from laser sights
+Using a scope does not affect accuracy, it only makes shooting distant enemies easier
+Sniper rifles are great on L4D2 finales with collecting gas cans due the distance you put between you and your teammates; you can save players from afar
+Alarms on cars in the distance will not be triggered by gunfire, therefore sniper rifles are ideal for picking off zombies around them
+You can easily zoom out by bashing
+The biggest difference between the hunting rifle and the military sniper rifle is the clip size, 15 and 30 respectively. The other difference is accuracy when moving, in which the hunting rifle excels and the military sniper rifle not so much
+This makes the hunting rifle ideal for on the move and the military sniper rifle ideal for holding up and during classic finales
+These are the Scout and AWP from CSS. They appear on servers which have the unlocker enabled or when players who own the German version of L4D2 host a server. Here's the unlocker (only works on local servers or when servers run this):
+Opposed to the other Counter Strike weapons ported to L4D2, these are actually decent for their damage output. Situational, but decent
+The Scout has a smaller clip and lower damage but fires faster and the AWP is the opposite of that
+A single headshot from either gun will kill any type of special infected besides the tank and witch
+Since these are both bolt-action, crowd control may be an issue
+Just like with pump shotguns, after each shot, perform a bash to increase the fire rate and shove zombies away at the same time
+While I personally oppose to using the grenade launcher, it's useful against special infected, which will be stunned on any difficulty
+This is especially useful against smokers
+You can use grenade launchers to propel teammates to otherwise unreachable heights. The usefulness of this is usually not that great in campaign or vs but has quite some use in speedruns and survival
+One-hit-kills all common and uncommon infected
+Great with both incendiary and explosive ammo
+If you die while holding an M60 and get rescued from a respawn closet or respawn in the next level, you will start with a fully loaded M60
+There are some differences between these two but they're not important enough to include
+Generally fixed guns don't have a lot of use since they are all placed in inconvenient spots 
+Don't shoot anywhere near teammates: the spread is real 
+Useful on tanks since it slows them down and packs a punch
+You can launch yourself off of miniguns, most notably on the No Mercy and Death Toll finales. To do this, jump and keep holding jump, stand on the far either side of the minigun and tap E twice. If you stand left you will fly to the right and if you stand right you will fly to the left. You can chain this into a bunnyhop, too, but ultimately it's a quite useless trick
+Use your ears. It takes some time to get used to but you should utilize your ears as much - if not far more - as you eyes 
+Headshots instantly kill commons regardless of the weapon used. However, if you're not playing realism, it's not necessary to keep a constant focus on landing headshots as a lot of guns can kill commons in 1-2 hits anywhere on the body
+When a horde ensues, the safest places to camp are: rooms with a single entrance > high places > corners > against a wall. Do not move location in a horde 
+In events where you must move, use a bile bomb; throw it far away from where you need to go, preferably in the opposite direction 
+Never allow yourself to be surrounded with commons. That means don't rush into a hostile area. Always keep them in an angle of 180� or smaller
+When trying to save a teammate from being surrounded, shoot the zombies he is not currently facing. That means always protect their backs
+Try not to shoot zombies in the direction of your teammates unless you got a clear, confident shot
+Instead, aim down with your gun so any bullets/pellets travelling through them or missing them will end up in the ground and not in some player's backside
+Be cautious for crouching commons (in vents and under tables, obstacles, etc.) since they will ignore your bash. For this reason do not hold up in vents
+It's easy to block him in midair by bashing in his face. Initiate a bash a little before he's about to strike. Try to do this while moving backwards
+Always bash twice and back off at the same time so he doesn't scratch you
+Don't rush in too closely with a melee weapon when he's stunned since he can still scratch you based on proximity
+One headshot from any sniper rifle as well as a deagle will kill a hunter
+A popular tactic that works on both expert and vs is to skeet hunters: waiting for him to leap at you and at the last moment go for the headshot whilst doing a bash (in case you miss)
+You can practise skeeting hunters with this addon:
+If you have a chainsaw, hold it upwards and let him jump into the spinning blade 
+When a hunter pounces a teammate and you are close with an autoshotgun, consider shooting it off instead of trying to bash it off since there exists a chance the bash doesn't register and will cost 2 extra hits, or more. For pump shotguns, perform a bash and shoot
+Hunters have no attack cooldown so be careful when he kills a teammate since he may instantly go for you next without warning
+When getting puked on, immediately go idle after the boomer is dead and back to both wipe your screen and decrease the amount of zombies that will come after you
+If he's right in your or your teammate's face, fight the urge to shoot him and bash instead, then shoot it when he's far enough away from you and your team. There's a slight delay between the puke animation and actually getting puked on
+If you see someone getting puked on, have a pipebomb ready as soon as possible
+You can use a bile bomb when someone gets puked on if you throw it directly onto zombies, but only do this if there's no urgent need for it elsewhere in the campaign (see Throwables)
+Boomers are easy to wallbang. 1 deagle or hunting rifle shot is enough
+Try to lure him to attack where you can sidestep behind an object to make him miss 
+You can cut smoker tongues with sharp weapons. Aim about 45� downwards and swing just before getting grabbed. You can no longer swing after being grabbed (except when using a chainsaw). This works best on medium range 
+You can practise cutting smoker tongues with this addon:
+A chainsaw is an ideal anti-smoker (tongue) weapon. Pull it out when there's a smoker near and you're alone
+If a teammate gets grabbed, first see if you can kill the smoker instead of directly freeing them, which would give the smoker a chance to get away
+Everybody hates jockeys since they are tricky to consistently block due their flea-like jumps 
+It's safer to back up and shoot jockeys than to try and block them 
+When attempting to block, aim for where he will likely jump, i.e. aim in front of you, slightly angled up
+If you have a chainsaw, hold it upwards and let him jump into the spinning blade 
+A single headshot from any sniper rifle will kill a jockey
+Spitters are weak and don't really require much attention
+2 deagle or sniper rifle bodyshots or 1 headshot of said weapons is enough to kill them
+Bolt-action sniper rifles can kill them in 1 bodyshot
+You can safely stand on most banisters and metal fences where spitter goo is underneath. It requires a bit of trial and error per individual banister or fence but in general it's useful to jump up there when it lands
+When on a banister or fence with spitter goo below it, don't jump or move down as you will receive damage when changing height for some reason
+Spitter goo has awesome levitation powers
+Make them charge at you and just sidestep to easily avoid him
+If you're in a corridor, back up to a safer location or climb on an object
+Be careful near walls or other linear obstacles as they may charge along them rather than deadstopping by slamming into them
+If you're close to where a charger will charge into, like a wall or any other object, jump just before he hits it so you don't get momentarily stunned by the impact
+If he's already close to you with minor or no damage taken, pull out your melee if you don't have a loaded autoshotgun
+Chargers are the only infected besides the witch and tank that don't die with 1 melee hit
+They can still die by a melee headshot however, known as leveling
+It is done by slashing him in the head with any melee weapon besides the chainsaw just before - kind of whilst - getting hit
+It's harder than it sounds. Leveling chargers is an advanced and risky technique, not to mention sort of dependant on your latency and network settings. Either train it into near-perfection or use it as a last resort. This skill is very useful in vs but still has its use in regular campaigns
+When a teammate gets charged, best to not open fire until the charger has stopped charging. You can hurt your teammate while he is being charged
+When getting charged yourself, keep going idle and back to prevent damage (I've once had the bot kill the charger in the process lol). Be careful since teammates can now shoot you. It's better for them to move closer and take him out with melee weapons
+You can practise leveling chargers with this addon:
+From safest to most dangerous witch elimination tactic: fire > ladder/saferoom > crown > shoot from a distance > headshot stun 
+You can safely mow down a wandering witch with an autoshotgun or one or two well-placed pump shotgun shots
+You can (relatively) safely beat up wandering witches with melee weapons with your buddies. It takes 4 hits regardless of the melee weapon used
+Try to take witches down when they are close to where you need to go, even when you can avoid them 
+To crown a witch, walk up to her with a shotgun and stop in front of her, standing. Hold the shotgun aiming in front of you but slightly down, not facing the witch. Wait for her to rise and when she stops rising and starts sort of shivering, wait for her head to swing right into your crosshair and fire. It takes some practise to find the right spot 
+I would say it's safer to attempt a crown on a witch with autoshotguns but I think it hardly makes a difference from pump shotguns. When a witch is startled it seems she momentarily becomes invulnerable, hence why it can happen when you perform a not-so-good crown but land one or two more decent hits, she still does not die. It's likely because of that
+You cannot crown a witch on realism
+You can practise witch crowning with this addon:
+Witches cannot break doors on realism, so just shoot her and get her to a door and just finish her off. Avoid using melee weapons for this due the chance of breaking the door
+Don't burn wandering witches if you have a shotgun or two teammates with melee weapons instead
+During daylight, witches on fire chase you faster than you can run, while during the night they chase you slower
+Throw a molotov at a witch but before it hits, go idle. This way she will not chase you because the fire now counts as environmental rather than originating from a player. This also works with gas cans but make sure the gas can is not directly on a witch but rather at the edge because the area directly around a gas can will combust immediately, before spreading to the sides 
+Do not set a witch on fire after she attacked someone; fire makes you her next target
+You don't need to shoot a witch that's on fire. She doesn't take much damage from the fire itself but rather a "burn timer". You're just wasting time/ammo
+Startling witches draws attention of common infected 
+You can stun a witch with a headshot from an AK-47, any sniper rifle or a deagle and then keep her stunned by bashing her. She has to be completely calm for it to work, so get as close as possible without upsetting her by crouching to get closer safely. Once you land the headshot and the first bash, mix up each melee swing (or some AK-47 headshots) with another bash
+If possible, headshot her from the side instead of front or back. This makes her initial stun animation longer and provides you with more time to get close to her
+Don't attempt to do this with a chainsaw
+You can pretty disturb a witch and then get into the saferoom. This works with the saferoom from both the begin and end of the level
+If the witch is in the saferoom to the next level, close the door and shoot her through it
+If you disturb a witch and then climb on a ladder (and stay on it), your teammates can safely shoot her down. You have to be on the ladder before she is
+If a witch is after a teammate and they are about to get caught, incap the teammate being chased. This gives you a few more seconds to finish off the witch and prevents death (only applies to expert)
+Fire is a must. Always try to set it on fire somehow 
+Throw a molotov in front of him rather than on him. Make sure it doesn't bounce off any surfaces 
+Do not shoot at a tank with incendiary ammo when someone is about to set him on fire with a molotov, gas can or fireworks as the flames will wear off
+Flames from incendiary ammo do the same amount of damage as those of a molotov, gas can and fireworks. Therefore, if your gun is loaded with incendiary ammo and there's no other fire source, keep setting him on fire, just let the fire do the damage and just avoid him meanwhile 
+Be careful not to trap a gas can between a door or it may go off
+If water is close or unavoidable, set the tank on fire, even if he'll burn only temporarily
+Try to circulate him around a large object and don't walk into dead ends, you will not be able to dodge him up close
+You can hear tanks quite easily. Make use of it, or else...
+If you can hear a tank through a door or wall, you can trigger it with damage by wallshots or bouncing a molotov off a wall towards him
+Dodging rocks is easy: when he grabs a rock, move left or right until the moment the rock leaves his hands, then change direction. This works even up close if done correctly. Watch out for obstacles or zombies in the way though
+Be careful you don't make him hit teammates this way
+If you can get behind appropriate cover, do that instead of using the technique above
+That an object covers your body from toe to head doesn't mean a tank rock can't still hit you at the top of your head or near the edge of the obstacle. Tank rocks have stupidly large hitboxes but still happen to slip across lots of obstacles
+Do not underestimate the attacks of the tank. Very common flaw among veterans (9 out of 10 times you'll hear them call yell "bs!")
+If you get a tank stuck to where he can't move closer to you, you can lure him to slap you but quickly move out of range so he misses, before charging in for 2 melee hits while his slap is on cooldown
+Tanks do not spawn on the first level of a campaign when it's a short level (i.e. No Mercy). One rather rare exception is The Parish 
+On non-expert difficulties, you can jump when getting slapped so you fly away from him. This both has a danger of plummeting to your death or instead to progress with an area so know what's behind you when doing it
+If you get a tank early in the level, go back to the saferoom, close the door and stand against it. This way he won't be able to get in and you can safely shoot or slash him through the door
+Just like with witches, get on the top of a ladder and have your teammates shoot the tank who's stuck underneath it. You have to be on the ladder before he is
+You can stun a tank with an explosion from a propane or oxygen tank. With the explosion, you can knock him into an environmental hazard or just buy some time
+While it looks cool and feels great pulling it off, if you haven't trained it to be consistent, it adds no value other than reaching difficult or impossible-to-reach spots
+There's no secret trick to it. It's just pressing jump at the right timing. It's a thing of practice and patience
+You can bhop both with and without holding crouch. Uncrouched bhops are more consistent but lack speed and crouched bhops are basically the opposite of that
+You gain a boost by bhopping on a downward slope and you will come to a halt when trying to bhop up an upward slope
+Binding "+jump" to your mousewheel doesn't work as well as you may think
+Using a bhop script may very well get you VAC banned, so don't risk it. Offline, server-side and non-VAC secured is still fine
+You can recognize noobs in two easy ways:
+Obvious signs such as no sense of where zombies are coming from, ignoring item call-outs, taking way too much damage too quickly, instantly voting to start upon joining a lobby, a sort of ghostly stare as if you didn't exist, and so on
+Low play hours. Personal rule of thumb: <75 in-game hours (approximately 100 hours in L4D2 as showed on Steam profiles) = noob. Exceptions exist but are not too common
+Assure noobs about your skill level and give them instructions on what to do. If they follow the directions of a veteran, even players who just picked up the game can play along on expert
+Uncooperative noobs are completely useless to the team and should be kicked if you play expert
+It's absolutely not unreasonable to kick noobs if you're playing expert and they are a burden to the team. Don't be afraid to kick (best if you have at least one friend with you when doing so). However, don't expect successful kicks if your entire team consists of noobs. You might as well leave if so
+Having a lot of hours in different games like CS:GO is a ridiculous argument. This is L4D2, not a generic normie shooter :^)
+An extension on that, stats do not necessarily mean a player is good or bad, or at least, not always. Therefore, bringing up a certain stat without any context does not mean it's a solid argument as in saying "I'm a good player". The best judgment is to experience them in a game.
+For the following list, read the "?" symbol as "does not always equal":
+Many hours ? high skill level
+Low hours ? complete noob (alt accounts exist)
+Many campaigns survived ? high skill level
+Many infected killed ? high skill level
+Having played this game since release ? high skill level
+High friendly fire ? troll (usually it is but not each and every case)
+Low friendly fire ? 100% trustable player with emphasis on deliberate friendly fire
+Average teammates revived/protected ? teamplayer
+Many health items shared ? teamplayer
+Any achievement ? [insert anything you can use as argument beneficial to proving you're a skilled player]
+You can hack achievements with a tool, FYI I've done it too to get Good Guy Nick but then regretted it and accidentally reset all my achievements, so I put 69/70 of them on to keep it fair I suppose. Serves me right tbh
+Let them go first so there's less chance of friendly fire
+When you are directly behind them, be careful that they don't back up from danger through you and shoot you 
+Don't let them get a hold of bile bombs, chances are they'll use it immediately and waste it
+If you're playing with a friend who's a noob and you don't live close, let him host so he gets a decent ping. Veterans are more adapted to sh�tty ping
+When you join a game and you see that in the early stage all or most medkits are gone and/or the team is already at crappy health, just disconnect
+The Passing and Cold Stream are difficult campaigns when you have noobs on your team. I'd suggest to steer clear of them unless you got a solid team
+Do not host local servers unless the players you play with live very close to you, or else they end up with high ping and if you leave or crash, the server will shut down for everyone
+If official dedicated servers are down or don't work for you, host best available dedicated. It's untrue that most of those servers are modded 
+If players vote to start but you want to wait, rapidly press start the game twice (start and cancel tied to the same clickable button) to erase the votes
+Some players start immediately when other players join a lobby. To counter this, simply press f10 with this bind to get back to the main menu: 
+bind "f10" "disconnect"
+Unproven but rumors say switching to "friends only" and back to "public" places your lobby above the rest for the same campaign i.e. in a stack of 5 The Parish campaigns, yours will be the first to get selected by players looking for games
+The lobby is the best place to assemble the team as you can safely perform profile checks on hours and clues of trollery
+Bear in mind that kicking players from the lobby does not mean they cannot rejoin the lobby and can even still join the game, unless you block them on Steam for the time being. A player isn't truly kicked from a session until you cast the kickvote in-game
+When playing with strangers, try to speak English so that everyone will understand you. If you can't, or someone else can't, then it's a good opportunity to learn it. Chatting, talking and playing has taught me English for the most part, much much more than school and college ever have
+There's a difference between hosting and joining servers. Personally, when you host a server, especially with friends, players who join you don't have much to demand besides playing the game (e.g. changing the difficulty or map or kicking players)
+People are not required to always do as you suggest when it comes to playing: don't force what doesn't budge. Long as the game is a success and fun, players should be allowed to play however they want
+The previous tip should hint that this largely does not apply to noobs since they usually do not know how to play properly
+Some players, including myself, often kick players who have private profiles out of fear of them being noobs or trolls. You cannot trust players with private profiles unless you know them or you've played with them before
+About vocalizer spam: either deal with it, join in or get this addon:
+Don't have an open mic. It's really annoying because it keeps decreasing and restoring the default game volume and people are usually not interested in every single sound you make. Use push-to-talk. If they refuse to listen and you don't want to kick, you can mute them with the console:
+voice_show_mute
+This shows the current players and their ID numbers. With the following command, replace the # with the number of the teammate:
+Now the person in question is muted
+Don't go idle forever (generally 5+ mins is considered too long). When you go idle, notify your team so they can adapt and to decrease the chances of being kicked
+If you plan to play with friends but you have already started the game and someone joins, kindly inform them that the spot is reserved for a friend. Usually they'll understand. If they are reluctant or seemingly non-sentient, just cast a kick vote
+A bit of a personal approach but when you injure a teammate, either apologize (chat, mic or vocalizer) or give them a health item
+It's nice if you do it, but generally you don't have to sorry for friendly fire when you weren't at fault (i.e. someone walks through your line of fire)
+If you spam your mic, are constantly annoying or pull anything deliberately stupid, expect to get shot and/or kicked, and don't expect people to see you getting shot as trolling
+Trolls tend to have private profiles or are set to offline (so players cannot track or join them) 
+Nicknames containing diseases, racism, religious/political figures, provoking texts, etc. Also check their nickname history on Steam for odd or wiped nicknames. It will show multiple names like "#", "##", "###" or similar characters, or simply a single, big blank space (invisible characters)
+Steam no longer allows players to send group invites to players not on their friends list but some people, usually troublemakers, are still members of these "rage groups", recognizeable by typical names such as "CRY NOOB", "Ragequitters", "You suck haha", "U mad bro?" and so on
+Trolls almost always have a high average friendly fire ratio (300+), sometimes in combination with a low percentage of completed campaigns (20-30% or lower)
+Purposefully wasting items
+Instantly casting a kick/restart campaign vote upon joining 
+Instantly spamming vocalizer upon joining 
+Trolls love shotguns and fire items 
+Trolls will usually either stay back and attack you from behind at some point or instead rush ahead to waste items and/or purposefully get themselves killed 
+Changing their name to that of a player on the server. When this happens, do not kickvote them or vote "yes" on a kickvote on one of the names as there is no distinction between them and you may very well end up kicking the guy who is not the troll
+A decent list of some trolls:
+Do not be fooled about the amount of trolls: L4D2 is crawling with them. Always expect them and be ready to fend them off, or die to their gun. Some people say L4D2 has no trolls. Lol
+Check their Steam profile on suspicious signs written in the previous paragraph
+Finding Steam profiles goes as following:
+To find profiles of players in-game: shift + tab > view players > current game/recent games > profile 
+To find profiles of players outside of the game: your nickname > friends > recently played with > profile
+If you have a suspicion about someone being a troll, proceed to cast a kickvote. Be sure to tell the team why you're casting the vote. Be very careful when casting the vote as trolls may suddenly attack you for it. It's best to do this when you have a friend with you
+Soon as you are confident that someone is a troll, do not hesitate and open fire on them until they die before initiating a kickvote (chance of retaliation) 
+Be careful of trolls switching to unused bots
+Noobs make it easier for trolls to do their thing, as they are usually not aware of things happening around them or even worse, are wrongfully informed about the situation at hand. Some trolls manage to pull it off to make people believe someone else is trolling by clever word play and voting. Other times noobs don't look at the messages ("Player1 incapacitated Player2") and without aid, will cause a ruckus for all honest players involved
+Block each and every troll on Steam so they cannot join your game or lobby and you can't accidentally join theirs. This is a proven method. Do not believe anyone telling you otherwise 
+If you block someone during a game, the effect will take place as soon as the game is finished or either the blocker or the one being blocked leaves
+A much more elaborate chunk of information on trolls:
+The Source console is one of the best features of all Valve games due their ease of rebinding keys and creating shortcuts, as well as configuring things externally
+You can change your FOV and viewmodel FOV with the following commands:
+fov_desired 90
+viewmodel_fov 90
+Make sure you do this in the main menu
+An important command is the bind command. With this you can not only configure keys for in-game actions but also perform other actions like a chat message or a settings change. Example:
+bind "mouse1" "+attack"
+To see what a key is bound to, simply type bind and the key behind it:
+bind w
+It will return this:
+"w" = "+forward"
+You can execute multiple commands at once with a semicolon. Also, I recommend putting keys and commands between quotes to ensure they will work. Example:
+bind "f1" "vote yes";bind "f2" "vote no"
+If you add // before a line, a config will ignore that line. Useful for commenting or temporarily inactivating commands in your configs
+With the echo command, you can print some text in the console or perhaps make ASCII art. This works best with executing .cfg files. Example:
+Some commands don't save sometimes or reset, or get overriden by addons each time you close the game. For this, you can create an autoexec.cfg in which you can put all your settings and binds. To do this:
+In the same folder (C:\Program Files (x86)\Steam\steamapps\common\Left 4 Dead 2\left4dead2\cfg), you can put files you can trigger on command, like when you want to change a setting or switch between settings. These have to be Notepad files just like the autoexec (these turn into .cfg files). An example:
+I made the following files:
+Sensitivity1.cfg
+Aliasing them to the exec with simple names, "s1" and "s2" respectively, and simply typing them into the console (you can also bind them to a key to make it even easier):
+This is my autoexec. If you've read this whole block, you should be able to understand what's going on:
+bind "f1" "vote yes";bind "f2" "vote no"
+// bind "alt" "+menuPicker"
+// bind "alt" "+mouse_menu Characters"
+bind "f10" "disconnect"
+bind "o" "show_menu Menu"
+bind "p" show_menu crosshair"
+bind "0" "+ch7; alias -ch7 -mouse_menu""
+// ^ Ignore this, it's part of my vocalizer
+bind "f4" "slam_play"
+// Source Live Audio Mixer
+cl_viewmodelfovsurvivor 75
+exec trash                                             
+// ^ My trashtalker, spawns a different line each time I press the same button
+alias s1 "exec sensitivity1"
+alias s2 "exec sensitivity2"
+exec vocalizer
+echo *** Autoexec successful ***
+Thanks for reading my guide. I'm positive that anyone, regardless of skill level, can get a bit of use out of it one way or another. This guide is currently still being worked on. The vast majority of information is there but it's not entirely finished.
+I wrote this guide myself. Thanks to NightHunter and kenso for proofreading and notifying about stuff that was off or missing.
+If you have anything to add or something sounds strange or possibly wrong, write a comment.
+If you want to add me to play, sure. I will only agree to play expert and higher, however. Also not vs.
+Don't post deliberately stupid comments, I will remove them.
+ebuland.manfred@gmail.com
+SUjug9853h2!!!44>??

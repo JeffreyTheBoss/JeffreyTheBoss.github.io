@@ -1,8 +1,13 @@
 
-//Variables & Colors
-$lightbackground: #dfdfdf;
-$darkbackground: #262529;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
+
+//!Main Colors
+    $lightbackground: #dfdfdf;
+    $darkbackground: #262529;
+
+
+//!Default Settings
 *
 {
     margin: 0;
@@ -10,18 +15,54 @@ $darkbackground: #262529;
     box-sizing: border-box;
 }
 
+body
+{
+     font-family: 'Noto Sans JP', sans-serif;
+//background-color: $darkbackground;
+background: linear-gradient(to right, $darkbackground, #42424e);
+font-size: 20px;
+line-height: 1.6;
+}
+
+h1,h2,h3,p
+{
+    margin-bottom: 10px;
+}
 
 a
 {
     text-decoration: none;
+    color: black;
     &:hover
-    {text-decoration: none;
+    {
+        color: rgb(0, 0, 0);
     }
 }
 
-body
+ul
 {
-background-color: $darkbackground;
+    list-style: none;
+}
+
+//!Start section 1
+
+nav{
+    user-select: none;
+    padding: 10px;
+    padding-right: 30px;
+    li{
+        padding: 0px 5px;
+        transition: 0.2s ease-in-out;
+        img
+        {
+            margin-top:7px;
+        }
+    }
+}
+
+textarea
+{
+    resize: none;
 }
 
 #sectionOne
@@ -33,55 +74,666 @@ background-color: $darkbackground;
     width: 100%;
     margin: auto;
     text-align: center;
-    
-    nav{
-        padding: 10px;
-        padding-right: 30px;
-        li{
-            padding: 0px 5px;
-            transition: 0.2s ease-in-out;
-        }
+
+    img
+    {
+        box-shadow: 10px 5px 5px $lightbackground;
     }
-
 }
-
 .social
 {
     &:hover
-    {
+    {       
         transform: rotate(25deg);
+        animation: color-rotate 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+     
     }
 }
 
-//removes the shape of the section 1 background on smaller devices
-@media only screen and (max-width: 1000px)
-{
-    #sectionOne
-    {
-        clip-path: none;
-    }
-}
+
 
 #sideBorderParagraph
 {
-    border-left: 2px solid $darkbackground;
-    height: 28px;
-    padding-left: 10px !important;
+    height: 32px;
+    padding-left: 10px;
     margin-left: 10px;
+    margin-top: 3px;
     a{
-        color: black;
-    &:hover
-    {
-        color: rgb(92, 91, 91);
-    }
+        p
+        {
+            &:hover
+            {
+                transform: scale(0.98);
+            }
+        }
+
 }
 }
 
-#test
+#informationbox
 {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+//!section 2
+#sectionTwo
+{
+    background: linear-gradient(to bottom, #3e546b, #bdc3c7);
+clip-path: polygon(5% 0, 43% 0, 90% 100%, 50% 100%);
+min-height: 100vh;
+//background-color: $lightbackground;
+margin-bottom: 80px;
+
+h2
+{
+    font-size: 40px;
+}
+.titlecard
+{
+    margin-left: 17%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.protesisprogresschart
+{
+    
+    display:flex;
+    margin-bottom: 80px;
+
+    img
+    {
+        border-radius: 2px;
+        min-width: 200px;
+        &:hover
+        {
+            transform: scale(0.98);
+        }
+    }
+    h3
+    {
+        text-align: center;
+    }
+
+    .sentencedot
+    {
+        font-size: 40px;
+        color: darkgoldenrod;
+    }
+    div
+    {
+        max-width: 300px;
+        padding: 10px;
+        min-width: 150px;
+    }
+
+}
+
+.protesisbutton
+{
+    margin-left: 60%;
+    padding-bottom: 60px;
+a
+{
+    &:hover
+    {
+        transform: scale(0.98);
+    }
+}
+}
+
+.chart1
+{
+    margin-left:17%;
+}
+.chart2
+{
+    margin-left:27%;
+}
+.chart3
+{
+    margin-left:37%;
+}
+.chart4
+{
+    margin-left:47%;
+}
+}
+//!section 3 start
+
+#sectionthree
+{
+    background-image: url(/Ebuland/resources/img/background3.jpg) ;
+    background-size: cover;
+
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+
+    h2
+    {
+        padding: 40px;
+        font-size: 50px;
+    }
+    
+    .hoverelement
+    {
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+       // background: linear-gradient(to right, #cac531, #f3f9a7);
+       background: linear-gradient(to right, #fffc00, #ffffff);
+        width: 50px;
+        height: 50px;
+        transition: 1s;
+        &:hover
+        {
+          //  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+            transform: scale(2) rotate(360deg);
+        }
+    }
+
+    .light-box{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        height: 100vh;
+        visibility: hidden;
+        transition: 0.8s;
+        opacity: 0.6;
+
+    }
+
+    #inside
+    {
+        transition: 1s;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin: auto;  
+        width: 300px;
+        background: linear-gradient(to right, #232526, #414345);
+        color: $lightbackground;
+        border-radius: 5px;
+        opacity: 0;
+    
+    }
+    .unitOne
+    {
+        position:relative;
+        top: 570px;
+        left: 220px;
+    }
+    .unitTwo
+    {
+        position:relative;
+        top: 550px;
+        left: 300px;
+    }
+    .unitThree
+    {
+        position:relative;
+        top: 420px;
+        left: 450px;
+    }
+    .unitFour
+    {
+        position:relative;
+        top: 450px;
+        left: 590px;
+    }
+    .unitFive
+    {
+        width: 25px;
+        height: 25px;
+        position:relative;
+        top: 460px;
+        left: 700px;
+    }
+    .unitSix
+    {
+        width: 60px;
+        height: 60px;
+        position:relative;
+        top: 260px;
+        left: 800px;
+    }
+    .unitSeven
+    {
+        position:relative;
+        top: 350px;
+        left: 950px;
+    }
+    .unitEight
+    {
+        position:relative;
+        top: 250px;
+        left: 1050px;
+    }
+    .unitNine
+    {
+        position:relative;
+        top: 100px;
+        left: 1150px;
+    }
+    .unitTen
+    {
+        position:relative;
+        top: 200px;
+        left: 1300px;
+    }
+    .unitEleven
+    {
+        width: 20px;
+        height: 20px;
+        position:relative;
+        top: 160px;
+        left: 1780px;
+    }
+
+}
+
+//!section 4 start
+#sectionfour
+{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    h2
+    {
+        padding: 30px;
+        font-size: 50px;
+        line-height: 4.5rem;
+        color: $lightbackground;
+    }
+    img
+    {
+        box-shadow: -10px 10px 80px rgba(0,0,0,.8);
+        width: 100%;
+        max-width: 1200px;
+        max-height: 600px;
+    }
+}
+
+#sectionFourWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+#timetable
+{
+    background-color: $darkbackground;
+    color: $lightbackground;
+    width: 550px;
+    margin-right: 2%;
+    background: rgba(0,0,0,0.0);
+}
+#iframe
+{
+    margin-top: 50px;
+    width:550px;
+     height:400px;
+}
+
+
+#footer
+{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    color: $lightbackground;
+    font-size: 15px;
+}
+
+//!Media Queries
+
+@media only screen and (max-width: 1700px)
+{
+    #sectionTwo
+    {
+        clip-path: none;
+        margin-bottom: 0px;
+    }
+
+    #sectionthree
+    {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .hoverelement
+        {
+            position:static;
+            margin: 20px;
+        }
+
+        .unitFive
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+        .unitSix
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+        .unitEleven
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    #sectionOne
+    {
+        clip-path: none;
+    }
+    #sectionTwo
+    {
+        clip-path: none;
+        
+        .protesiscontainer
+        {
+            display:flex;
+            justify-content: space-evenly;
+            flex-direction:column;
+        }
+        
+        .protesisprogresschart
+        {
+            margin:  60px auto;
+
+        }
+        .titlecard
+        {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .protesisbutton
+        {
+             text-align: center;
+             margin: auto;
+        }
+    }
+    #sectionthree
+    {
+        background-image: url(/Ebuland/resources/img/background3small.jpg) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .hoverelement
+        {
+            display:none;
+        }
+    }
+}
+@media only screen and (max-width: 600px)
+{
+   #sectionTwo .protesisprogresschart
+{
+    margin:  0px auto;
+    flex-direction: column;
+}
+
+#iframe
+{
+    margin-top: 50px;
+    width:300px;
+     height:300px;
+}
+}
+
+@media only screen and (max-width: 400px)
+{
+    #sectionOne
+    {
+        font-size: 13px;
+    }
+    #sectionTwo .protesisprogresschart
+    {
+        width: 200px;
+        font-size: 13px;
+       img
+       {
+           width: 200px;
+           height: 200px;
+       }
+    }
+
+    #iframe
+{
+    width:200px;
+     height:200px;
+}
+
+#sectionfour
+{
+
+
+    h2
+    {
+
+        font-size: 23px;
+        line-height: 3.5rem;
+    }
+    img
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+#timetable
+{
+font-size: 13px;
+}
+
+    
+}
+
+@media only screen and (max-width: 600px)
+{
+#sectionfour
+{
+   
+    img
+    {
+       width: 400px;
+       height: 500px;
+    }
+
+}
+
+
+}
+
+
+
+
+@media only screen and (min-width: 2000px)
+{
+    #sectionOne
+    {
+        clip-path: none;
+    }
+
+    #sectionTwo
+    {
+        clip-path: none;
+
+        .protesisbutton
+        {
+            text-align: center;
+            margin: auto;
+         }
+    }
+    #sectionthree
+    {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        .hoverelement
+        {
+            position:static;
+            display:inline-block;
+            margin: 20px;
+        }
+
+        .unitFive
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+        .unitSix
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+        .unitEleven
+        {
+            width: 50px;
+            height: 50px;
+
+        }
+    }
+    
+}
+
+
+
+//!animations
+
+@keyframes color-rotate 
+{
+    from
+    {
+        filter: hue-rotate(0deg);
+    }
+    to
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+//!TODO add this animation with js randomly to one star at a time
+@keyframes star-idle
+{
+    from
+    {
+
+
+    }
+    50%
+    {
+        transform:translate(0px,-24px);
+    }
+    to
+    {
+        
+
+        transform:translate(0px,0px);
+        
+    }
+}
+
+@keyframes star-idle-pop
+{
+
+    50%
+    {
+        transform: scale(1.05);
+        
+    }
+    
+}
+
+.star-idle
+{
+
+    animation: star-idle 1s, star-idle-pop 1s;
+
+}
+
+
+
+//!leg.html
+
+#sectionOneLEG
+{
+    color: $lightbackground;
+    text-align: center;
+    min-height: 100vh;
+    user-select: none;
+    background: linear-gradient(to right, $darkbackground, #42424e);
+    width: 100%;
+    margin: auto;
+    h1{
+        
+        padding: 50px 0px 0px 0px;
+    }
+    .picture-grid
+    {
+        display:grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+        grid-auto-rows: 240px;
+        text-align: center;
+        line-height: 240px;
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .picture-grid-item
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        &:hover
+        {
+            opacity: 1;
+            transform: scale(0.98);
+        }
+    }
+@media screen and (min-width: 600px)
+{
+    .item-tall
+    {
+        grid-row: span 2 / auto ;
+    }
+    
+    .item-wide
+    {
+        grid-column: span 2 / auto ;
+    }
+}
+
 }
