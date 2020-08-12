@@ -8,6 +8,13 @@
     }
 
 
+    
+    setTimeout(function() {  
+        document.getElementById("backgroundvideo").src = "resource/loopvid.mp4";
+    }, 15000);
+
+
+    
 let url = "https://devildaggers.info/Api/GetLeaderboard"
 
 let xhr = new XMLHttpRequest();
@@ -77,7 +84,16 @@ xhr.onload = function() {
     node.appendChild(textnode);
     global.appendChild(node);
 
+    var audio = $("#audio")[0];
 
+    $("span").mouseenter(function() {
+      audio.play();
+    });
+    
+    $("span").mouseleave(function() {
+        audio.pause();
+        audio.currentTime = 0;
+      });
 
 $(function() {
 
@@ -182,6 +198,8 @@ $(function() {
         });
     }
     });
+
+
 };
 
 

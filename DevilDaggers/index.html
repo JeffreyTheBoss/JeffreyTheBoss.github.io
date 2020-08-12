@@ -24,10 +24,12 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <audio id="audio">
+            <source src="sounds/sound.mp3" type="audio/mpeg"></source>
+        </audio>
 
-            <video autoplay muted loop id="backgroundvideo">
-                <source src="resource/ddgifskulls.mp4" type="video/mp4">
-            </video>
+            <video autoplay muted loop id="backgroundvideo" src="resource/firstvid.mp4"></video>
+
 
             <div id="symbol">
                 <a href="index.html"><img src="resource/symbol.gif" height="100px"></a>
@@ -37,7 +39,7 @@
                 <a href="#">Live</a>
             </div>
 
-                <button type="button" onclick="changeGlobal()" >Global</button>
+                <button type="button" onclick="changeGlobal()" ><em>Global</em></button>
 
         <section id="section">
             <h1>Devil Daggers Leaderboard</h1>

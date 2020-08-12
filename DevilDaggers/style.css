@@ -126,5 +126,7 @@ button {
   outline: none;
   color: red;
   font-size: 30px;
+  background-color: white;
+  font-family: 'goethebold' ,sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
