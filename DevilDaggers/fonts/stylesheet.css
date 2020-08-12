@@ -1,0 +1,16 @@
+
+
+
+
+@font-face {
+    font-family: 'goethebold';
+    src: url('goethebold-webfont.eot');
+    src: url('goethebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('goethebold-webfont.woff2') format('woff2'),
+         url('goethebold-webfont.woff') format('woff'),
+         url('goethebold-webfont.ttf') format('truetype'),
+         url('goethebold-webfont.svg#goethebold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}

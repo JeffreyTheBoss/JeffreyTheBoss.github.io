@@ -1086,6 +1086,7 @@ body {
   }
   #section5ContactMainContainerInside .section5ContactRightContainer .fields div input[type="text"] {
     padding: 8px;
+    width: 200px;
   }
   #section5ContactMainContainerInside .section5ContactRightContainer textarea {
     margin-left: 0px;
