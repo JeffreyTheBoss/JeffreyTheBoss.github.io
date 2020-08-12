@@ -206,6 +206,7 @@ a
 }
 }
 //!section 3 start
+  
 
 #sectionthree
 {
@@ -508,8 +509,20 @@ a
 }
 }
 
+
 @media only screen and (max-width: 400px)
 {
+
+    .dropdown-menu
+{
+    width: 250px;
+margin-right: 100px;
+}
+textarea
+{
+    width: 215px;
+}
+
     #sectionOne
     {
         font-size: 13px;
