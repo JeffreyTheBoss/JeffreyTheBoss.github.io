@@ -7,15 +7,31 @@
         document.getElementById("global").style.visibility = "visible";
     }
 
+    document.getElementById("soundimg").onclick = function() {
 
-    
+        if(document.getElementById("backgroundaudio").muted == false)
+        {
+            document.getElementById("soundimg").src = "resource/soundoff.png";
+            document.getElementById("backgroundaudio").muted = true;
+        }else
+        {
+            document.getElementById("soundimg").src = "resource/soundon.png";
+            document.getElementById("backgroundaudio").muted = false;
+        }
+    };
+
     setTimeout(function() {  
         document.getElementById("backgroundvideo").src = "resource/loopvid.mp4";
     }, 15000);
 
 
-    
-let url = "https://devildaggers.info/Api/GetLeaderboard"
+document.getElementById("begone").onclick = function() {
+    document.getElementById("cookieannoyance").style.visibility = "hidden";
+    document.getElementById("backgroundaudio").play();
+};
+
+    //xhr
+let url = "https://devildaggers.info/api/leaderboards/"
 
 let xhr = new XMLHttpRequest();
 xhr.open('get', url);
@@ -36,18 +52,18 @@ xhr.onload = function() {
    
     for(let i = 0; i < 100; i++)
     {
-        if(converted.Entries[i].Id == "1677")
+        if(converted.entries[i].id == "1677")
         {
             var node = document.createElement("SPAN");
             var nodeDEL = document.createElement("DEL");
-            var textnode = document.createTextNode(converted.Entries[i].Rank + ". " + "Erik Cornerhead" + " " + setkomma(converted.Entries[i].Time));
+            var textnode = document.createTextNode(converted.entries[i].rank + ". " + "Erik Cornerhead" + " " + setkomma(converted.entries[i].time));
             nodeDEL.appendChild(textnode);
             node.appendChild(nodeDEL);
             table.appendChild(node);
         }else
         {
             var node = document.createElement("SPAN");
-            var textnode = document.createTextNode(converted.Entries[i].Rank + ". " + converted.Entries[i].Username + " " + setkomma(converted.Entries[i].Time));
+            var textnode = document.createTextNode(converted.entries[i].rank + ". " + converted.entries[i].username + " " + setkomma(converted.entries[i].time));
             node.appendChild(textnode);
             table.appendChild(node);
         }
@@ -55,32 +71,32 @@ xhr.onload = function() {
     }
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode("Total Players: " + converted.Players + "   ");
+    var textnode = document.createTextNode("Total Players: " + converted.players + "   ");
     node.appendChild(textnode);
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Time: " + secondsToCenturies(converted.TimeGlobal) +" Centuries");
+    var textnode = document.createTextNode( "Global Time: " + secondsToCenturies(converted.timeGlobal) +" Centuries");
     node.appendChild(textnode);
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Kills: " + converted.KillsGlobal);
+    var textnode = document.createTextNode( "Global Kills: " + converted.killsGlobal);
     node.appendChild(textnode);
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Gems: " + converted.GemsGlobal);
+    var textnode = document.createTextNode( "Global Gems: " + converted.gemsGlobal);
     node.appendChild(textnode);
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Deaths: " + converted.DeathsGlobal);
+    var textnode = document.createTextNode( "Global Deaths: " + converted.deathsGlobal);
     node.appendChild(textnode);
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Accuracy: " +      ((converted.ShotsHitGlobal  / (converted.ShotsFiredGlobal / 100)).toFixed(2) + "%") );
+    var textnode = document.createTextNode( "Global Accuracy: " +      ((converted.shotsHitGlobal  / (converted.shotsFiredGlobal / 100)).toFixed(2) + "%") );
     node.appendChild(textnode);
     global.appendChild(node);
 
@@ -94,6 +110,7 @@ xhr.onload = function() {
         audio.pause();
         audio.currentTime = 0;
       });
+
 
 $(function() {
 
@@ -182,11 +199,11 @@ $(function() {
             //
             cog.scrollTop(base);
             if(firstDigits(digit.eq(2).text()) != 0){
-                field.text("Kills: " + converted.Entries[firstDigits(digit.eq(2).text())-1].Kills.toString() +
-                "  Gems: "+converted.Entries[firstDigits(digit.eq(2).text())-1].Gems.toString()  +"  Accuracy: " + 
-                ((converted.Entries[firstDigits(digit.eq(2).text())-1].ShotsHit  
+                field.text("Kills: " + converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString() +
+                "  Gems: "+converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString()  +"  Accuracy: " + 
+                ((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
                 /
-                (converted.Entries[firstDigits(digit.eq(2).text())-1].ShotsFired
+                (converted.entries[firstDigits(digit.eq(2).text())-1].shotsFired
                 /
                 100
                 )).toFixed(2) + "%")

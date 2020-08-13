@@ -28,18 +28,29 @@
             <source src="sounds/sound.mp3" type="audio/mpeg"></source>
         </audio>
 
-            <video autoplay muted loop id="backgroundvideo" src="resource/firstvid.mp4"></video>
+        <audio loop id="backgroundaudio">  
+            <source src="sounds/drei.mp3" type="audio/mpeg"></source>
+        </audio>
+
+        <video autoplay muted loop id="backgroundvideo" src="resource/firstvid.mp4"></video>
 
 
-            <div id="symbol">
-                <a href="index.html"><img src="resource/symbol.gif" height="100px"></a>
-            </div>
+        <div id="symbol">
+            <a href="index.html"><img src="resource/symbol.gif" height="100px"></a>
+        </div>
 
-            <div id="livebutton">
-                <a href="#">Live</a>
-            </div>
+        <div id="livebutton">
+            <a href="#">Live</a>
+        </div>
 
-                <button type="button" onclick="changeGlobal()" ><em>Global</em></button>
+        <button type="button" id="button" onclick="changeGlobal()" ><em>Global</em></button>
+
+        <div id="cookieannoyance">
+            <button id="begone">play</button>
+        </div>
+        <div id="soundtoggle">
+            <img id="soundimg" src="resource/soundon.png" width="32px" height="32px"alt="mute">
+        </div>
 
         <section id="section">
             <h1>Devil Daggers Leaderboard</h1>
