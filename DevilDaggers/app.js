@@ -112,16 +112,43 @@ xhr.onload = function() {
       });
 
 
+
+      $('#flyin').mouseenter(function() {
+        document.getElementById("flyin").style.right = "0px";
+    });
+
+    $('#flyin').mouseleave(function() {
+        document.getElementById("flyin").style.right = "-120px";
+    });
+
+    $('#hangercontent').click(function() {
+        $("#backgroundaudio")[0].src = "sounds/appropriatemusic.mp3";
+        $("#backgroundaudio")[0].play();
+        document.getElementById("soundimg").src = "resource/soundon.png";
+        document.getElementById("backgroundaudio").muted = false;
+        document.getElementById("symbolgif").src ="resource/comoestas.gif";
+    });
+
 $(function() {
 
-    var gate = $(window), cog = $('#rotator'), digit = cog.find('span'), field = $('#result'), slot = digit.height(), base = 1.5*slot, up, swipe;
+    var gate = $(window), cog = $('#rotator'), digit = cog.find('span'), /*field = $('#result'),*/ slot = digit.height(), base = 1.5*slot, up, swipe;
+
+    var resultline1 = $('#resultline1') , resultline2 = $('#resultline2') , resultline3 = $('#resultline3') 
     
     if (document.readyState == 'complete') interAction();
     else gate.one('load', interAction);
     
     function interAction() {
     
-        field.text();
+       // field.text();
+       resultline1.text(converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString());
+       resultline2.text(converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString());
+       resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
+       /
+       (converted.entries[firstDigits(digit.eq(2).text())-1].shotsFired
+       /
+       100
+       )).toFixed(2) + "%"));
     
         cog.scrollTop(base).fadeTo(0,1).mousewheel(function(turn, delta) {
     
@@ -199,6 +226,16 @@ $(function() {
             //
             cog.scrollTop(base);
             if(firstDigits(digit.eq(2).text()) != 0){
+
+                resultline1.text(converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString());
+                resultline2.text(converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString());
+                resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
+                /
+                (converted.entries[firstDigits(digit.eq(2).text())-1].shotsFired
+                /
+                100
+                )).toFixed(2) + "%"));
+                /*
                 field.text("Kills: " + converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString() +
                 "  Gems: "+converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString()  +"  Accuracy: " + 
                 ((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
@@ -208,10 +245,13 @@ $(function() {
                 100
                 )).toFixed(2) + "%")
                 ); 
-                
+                */
             }else
             {
-                field.text("");
+                //field.text("");
+                resultline1.text("");
+                resultline2.text("");
+                resultline3.text("");
             }
         });
     }
