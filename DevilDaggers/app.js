@@ -208,6 +208,7 @@ $(function() {
                 100
                 )).toFixed(2) + "%")
                 ); 
+                
             }else
             {
                 field.text("");
