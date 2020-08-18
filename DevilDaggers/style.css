@@ -130,16 +130,17 @@ footer {
   right: 0;
   top: 0;
   padding: 2px 10px;
-  background-color: white;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   color: red;
   font-size: 30px;
-  background-color: white;
   font-family: 'goethebold' ,sans-serif;
+  border: 2px solid white;
   margin: 8px;
+  border-radius: 5%;
 }
 
 #button em {
@@ -161,9 +162,10 @@ footer {
   margin-top: 8px;
   padding: 2px 10px;
   line-height: 1.0;
-  background: white;
-  background-color: white;
+  background: transparent;
+  border: 2px solid white;
   font-size: 30px;
+  border-radius: 5%;
 }
 
 #livebutton a {
@@ -258,5 +260,47 @@ footer {
   background-color: #520600;
   cursor: pointer;
   padding: 0px 10px;
+}
+
+@media only screen and (max-width: 1800px) {
+  #global {
+    line-height: 1.2;
+  }
+  #global li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #section h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #section h1 {
+    font-size: 30px;
+  }
+  #symbolgif {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #section h1 {
+    font-size: 20px;
+  }
+  #global {
+    line-height: normal;
+  }
+  #global li {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

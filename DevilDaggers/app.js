@@ -127,6 +127,7 @@ xhr.onload = function() {
         document.getElementById("soundimg").src = "resource/soundon.png";
         document.getElementById("backgroundaudio").muted = false;
         document.getElementById("symbolgif").src ="resource/comoestas.gif";
+        document.getElementById("backgroundvideo").style.transform = "rotate(180deg)";
     });
 
 $(function() {
