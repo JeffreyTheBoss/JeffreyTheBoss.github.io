@@ -187,15 +187,13 @@ footer {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: 350505;
+  z-index: 35;
   background-color: black;
 }
 
 #cookieannoyance button, #cookieannoyance a {
   font-family: 'goethebold' ,sans-serif;
   font-size: 50px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -345,6 +343,18 @@ footer {
   }
   #result footer em {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  #global li {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-height: 820px) {
+  #global li {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=style.css.map */

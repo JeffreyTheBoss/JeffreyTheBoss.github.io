@@ -129,8 +129,7 @@ footer
   text-align: center;
   bottom: 0;
   left: 0;
-right: 0;
-
+  right: 0;
 }
 
 #button
@@ -198,7 +197,7 @@ right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: 350505;
+    z-index: 35;
     background-color: black;
 
 
@@ -206,8 +205,6 @@ right: 0;
     {
       font-family: 'goethebold' ,sans-serif;
       font-size: 50px;
-      background-color: Transparent;
-      background-repeat:no-repeat;
       border: none;
       cursor:pointer;
       overflow: hidden;
@@ -405,4 +402,31 @@ right: 0;
     }
   }
 }
+}
+
+// vertical media querie
+@media only screen and (max-height: 900px)
+{
+  #global
+  {
+   
+    li
+    {
+      font-size: 16px;
+
+    }
+  }
+}
+
+@media only screen and (max-height: 820px)
+{
+  #global
+  {
+   
+    li
+    {
+      display:inline-block;
+
+    }
+  }
 }
