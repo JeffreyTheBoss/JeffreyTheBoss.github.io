@@ -96,7 +96,7 @@ xhr.onload = function() {
     global.appendChild(node);
 
     var node = document.createElement("LI");
-    var textnode = document.createTextNode( "Global Accuracy: " +      ((converted.shotsHitGlobal  / (converted.shotsFiredGlobal / 100)).toFixed(2) + "%") );
+    var textnode = document.createTextNode( "Global Accuracy: " +      ((converted.daggersHitGlobal  / (converted.daggersFiredGlobal / 100)).toFixed(2) + "%") );
     node.appendChild(textnode);
     global.appendChild(node);
 
@@ -144,9 +144,9 @@ $(function() {
        // field.text();
        resultline1.text(converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString());
        resultline2.text(converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString());
-       resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
+       resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].daggersHit  
        /
-       (converted.entries[firstDigits(digit.eq(2).text())-1].shotsFired
+       (converted.entries[firstDigits(digit.eq(2).text())-1].daggersFired
        /
        100
        )).toFixed(2) + "%"));
@@ -230,9 +230,9 @@ $(function() {
 
                 resultline1.text(converted.entries[firstDigits(digit.eq(2).text())-1].kills.toString());
                 resultline2.text(converted.entries[firstDigits(digit.eq(2).text())-1].gems.toString());
-                resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].shotsHit  
+                resultline3.text(((converted.entries[firstDigits(digit.eq(2).text())-1].daggersHit  
                 /
-                (converted.entries[firstDigits(digit.eq(2).text())-1].shotsFired
+                (converted.entries[firstDigits(digit.eq(2).text())-1].daggersFired
                 /
                 100
                 )).toFixed(2) + "%"));
