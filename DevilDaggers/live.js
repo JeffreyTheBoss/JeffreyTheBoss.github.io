@@ -220,6 +220,7 @@ $( document ).ready(function() {
                 if(result2_1PARSED.entries[i].deathsTotal != result2_2PARSED.entries[i].deathsTotal && result2_1PARSED.entries[i].deathsTotal != doubleCheckCounter[1])
                 {
                   doubleCheckCounter[1] = result2_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -281,6 +282,7 @@ $( document ).ready(function() {
                 if(result3_1PARSED.entries[i].deathsTotal != result3_2PARSED.entries[i].deathsTotal && result3_1PARSED.entries[i].deathsTotal != doubleCheckCounter[2])
                 {
                   doubleCheckCounter[2] =result3_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -342,6 +344,7 @@ $( document ).ready(function() {
                  if(result4_1PARSED.entries[i].deathsTotal != result4_2PARSED.entries[i].deathsTotal && result4_1PARSED.entries[i].deathsTotal != doubleCheckCounter[3])
                  {
                    doubleCheckCounter[3] = result4_1PARSED.entries[i].deathsTotal;
+                   audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -403,6 +406,7 @@ $( document ).ready(function() {
                 if(result5_1PARSED.entries[i].deathsTotal != result5_2PARSED.entries[i].deathsTotal && result5_1PARSED.entries[i].deathsTotal != doubleCheckCounter[4])
                 {
                   doubleCheckCounter[4] = result5_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -464,6 +468,7 @@ $( document ).ready(function() {
                  if(result6_1PARSED.entries[i].deathsTotal != result6_2PARSED.entries[i].deathsTotal && result6_1PARSED.entries[i].deathsTotal != doubleCheckCounter[5])
                  {
                    doubleCheckCounter[5] = result6_1PARSED.entries[i].deathsTotal;
+                   audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -525,6 +530,7 @@ $( document ).ready(function() {
                  if(result7_1PARSED.entries[i].deathsTotal != result7_2PARSED.entries[i].deathsTotal && result7_1PARSED.entries[i].deathsTotal != doubleCheckCounter[6])
                  {
                    doubleCheckCounter[6] = result7_1PARSED.entries[i].deathsTotal;
+                   audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -586,6 +592,7 @@ $( document ).ready(function() {
                 if(result8_1PARSED.entries[i].deathsTotal != result8_2PARSED.entries[i].deathsTotal && result8_1PARSED.entries[i].deathsTotal != doubleCheckCounter[7])
                 {
                   doubleCheckCounter[7] = result8_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -648,6 +655,7 @@ $( document ).ready(function() {
                 if(result9_1PARSED.entries[i].deathsTotal != result9_2PARSED.entries[i].deathsTotal && result9_1PARSED.entries[i].deathsTotal != doubleCheckCounter[8])
                 {
                   doubleCheckCounter[8] = result9_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
@@ -709,6 +717,7 @@ $( document ).ready(function() {
                 if(result10_1PARSED.entries[i].deathsTotal != result10_2PARSED.entries[i].deathsTotal && result10_1PARSED.entries[i].deathsTotal != doubleCheckCounter[9])
                 {
                   doubleCheckCounter[9] = result10_1PARSED.entries[i].deathsTotal;
+                  audio.play();
                   var imageKills = document.createElement("IMG");
                   imageKills.setAttribute("src", "resource/icondagger.png");
                   imageKills.setAttribute("width", "16");
