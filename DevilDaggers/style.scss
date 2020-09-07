@@ -430,3 +430,51 @@ footer
     }
   }
 }
+
+
+//!start of live section
+#liveholder
+{
+  text-align: center;
+  width: fit-content;
+  margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+  span {
+    position: relative;
+    display: block;
+    img
+    {
+      margin-right: 5px;
+    }
+  }
+}
+
+#symbolcenter
+{
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 400px)
+{
+#liveholder
+{
+  span{
+    font-size: 12px;
+  }
+}
+}
+
+@media only screen and (max-width: 520px)
+{
+  #livetitle
+  {
+    font-size: 20px;
+  }
+}
+
+

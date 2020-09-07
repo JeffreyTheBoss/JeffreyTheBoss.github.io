@@ -357,4 +357,42 @@ footer {
     display: inline-block;
   }
 }
+
+#liveholder {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#liveholder span {
+  position: relative;
+  display: block;
+}
+
+#liveholder span img {
+  margin-right: 5px;
+}
+
+#symbolcenter {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  #liveholder span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #livetitle {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

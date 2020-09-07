@@ -31,7 +31,7 @@ document.getElementById("begone").onclick = function() {
 };
 
     //xhr
-let url = "https://devildaggers.info/api/leaderboards/"
+let url = "https://devildaggers.info/api/leaderboards/";
 
 let xhr = new XMLHttpRequest();
 xhr.open('get', url);
@@ -55,6 +55,7 @@ xhr.onload = function() {
         if(converted.entries[i].id == "1677")
         {
             var node = document.createElement("SPAN");
+            node.setAttribute('title', "User ID: "+converted.entries[i].id);
             var nodeDEL = document.createElement("DEL");
             var textnode = document.createTextNode(converted.entries[i].rank + ". " + "Erik Cornerhead" + " " + setkomma(converted.entries[i].time));
             nodeDEL.appendChild(textnode);
@@ -63,6 +64,7 @@ xhr.onload = function() {
         }else
         {
             var node = document.createElement("SPAN");
+            node.setAttribute('title', "User ID: "+converted.entries[i].id);
             var textnode = document.createTextNode(converted.entries[i].rank + ". " + converted.entries[i].username + " " + setkomma(converted.entries[i].time));
             node.appendChild(textnode);
             table.appendChild(node);
