@@ -27,8 +27,10 @@ $( document ).ready(function() {
     }
   });
 
+  
   var doubleCheckCounter = new Array(10);
-
+  
+//yes i lazy
   setInterval(function(){ 
     getTop100(url).then(function(result) 
     {
