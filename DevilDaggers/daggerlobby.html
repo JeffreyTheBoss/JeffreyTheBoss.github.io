@@ -12,7 +12,6 @@
 		</style>
 	</head>
 	<body>
-
         <div id="c">Description</div>
         
 
@@ -27,7 +26,10 @@
             import { MtlObjBridge } from './threejs/js/MtlObjBridge.js';
             import { FirstPersonControls } from './threejs/js/FirstPersonControls.js';
             import { PointerLockControls } from './threejs/js/PointerLockControls.js';
-         //   import { MeshBasicMaterial } from './threejs/js/module.js';
+
+            javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+
+
 
             let prevTime = performance.now();
             let slerp = new THREE.Quaternion();
@@ -530,6 +532,11 @@
                 //the game loop
                 requestAnimationFrame( animate );
 
+
+
+
+
+
                 const time = performance.now();
                 var elapsed = clock.getElapsedTime();
                 fire.update( elapsed );
@@ -683,7 +690,6 @@
                     hand.position.z = camera.position.z + chikenwing.z;
                 }
 
-            
 	            renderer.render( scene, camera );
             }
             animate();
