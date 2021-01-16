@@ -2,7 +2,8 @@ import {
 	MathUtils,
 	Spherical,
 	Vector3
-} from "./module.js";
+} from 'https://unpkg.com/three@0.121.1/build/three.module.js';
+//"./module.js";
 
 var FirstPersonControls = function ( object, domElement ) {
 
