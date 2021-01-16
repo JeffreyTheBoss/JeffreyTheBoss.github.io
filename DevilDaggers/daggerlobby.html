@@ -82,7 +82,7 @@
             let hand;
             let hasLoaded = false;
             let hasLoadedHand = false;
-            let elfandrino;
+
 
             /* SKULL ONE BABYSKULL*/
             let loaderBoid = new OBJLoader2();
@@ -125,7 +125,7 @@
                 });
             });
             /* BOID 3 body for the laughing skull */
-            let loaderBoid_3_v2 = new OBJLoader2();
+/*             let loaderBoid_3_v2 = new OBJLoader2();
             mtlLoader.load('threejs/models/statue3.mtl', (mtlParseResult) => 
             {
                 const materials =  MtlObjBridge.addMaterialsFromMtlLoader(mtlParseResult);
@@ -142,7 +142,7 @@
                     materials["Default_OBJ.002"].shininess = 0;
                     scene.add(root);
                 });
-            });
+            }); */
 
             let loaderBoid_3 = new OBJLoader2();
             mtlLoader.load('threejs/models/boid3.mtl', (mtlParseResult) => 
@@ -654,13 +654,11 @@
                     {
                         light4.position.y += 0.004;
                         dagger.position.y += 0.004;
-                        elfandrino.position.set(0,8,50);
                     }else
                     {
                         light4.position.y -= 0.004;
                         dagger.position.y -= 0.004;
                         daggerBackup = false;
-                        elfandrino.position.set(0,8,30);
                     }
                     if(dagger.position.y < 0)
                     {
