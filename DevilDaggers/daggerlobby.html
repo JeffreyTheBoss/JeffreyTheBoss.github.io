@@ -34,7 +34,7 @@
             let prevTime = performance.now();
             let slerp = new THREE.Quaternion();
 
-            var textMaterial = new THREE.ShaderMaterial({
+/*             var textMaterial = new THREE.ShaderMaterial({
                 uniforms: {
                     color1: {
                     value: new THREE.Color(0x3c3c3c)
@@ -63,7 +63,7 @@
                     }
                 `,
                 wireframe: false
-                });
+                }); */
 
             //The scene and the Perspective Camera
             var scene = new THREE.Scene();
@@ -124,25 +124,7 @@
                     
                 });
             });
-            /* BOID 3 body for the laughing skull */
-/*             let loaderBoid_3_v2 = new OBJLoader2();
-            mtlLoader.load('threejs/models/statue3.mtl', (mtlParseResult) => 
-            {
-                const materials =  MtlObjBridge.addMaterialsFromMtlLoader(mtlParseResult);
-                loaderBoid_3_v2.addMaterials(materials);
-                loaderBoid_3_v2.load('threejs/models/statue3.obj', (root) => 
-                {
-                    elfandrino = root;
-                    root.scale.x = 4;
-                    root.scale.y = 4;
-                    root.scale.z = 4;
-                    root.position.z = 50;
-                    root.position.y = 8;
-                    root.rotation.y = 3;
-                    materials["Default_OBJ.002"].shininess = 0;
-                    scene.add(root);
-                });
-            }); */
+
 
             let loaderBoid_3 = new OBJLoader2();
             mtlLoader.load('threejs/models/boid3.mtl', (mtlParseResult) => 
@@ -342,7 +324,7 @@
             let rank2URL = "https://devildaggers.info/api/leaderboards/user/by-rank?rank=2";
             let rank3URL = "https://devildaggers.info/api/leaderboards/user/by-rank?rank=3";
 
-            fetch(rank1URL)
+/*             fetch(rank1URL)
             .then(response => response.json())
             .then(data => {
                 loaderFORFONT.load( 'threejs/font/Goethe_Bold.json', function ( font ) {
@@ -388,8 +370,8 @@
             yeyeyeye = true;
             scene.add( rank2Username );
             } );
-            });
-
+            }); */
+/* 
             fetch(rank3URL)
             .then(response => response.json())
             .then(data => {
@@ -412,7 +394,7 @@
             yeyeyeyeye = true
             scene.add( rank3Username );
             } );
-            });
+            }); */
 
             
             
@@ -425,7 +407,7 @@
             //pointlight
             let colorSkulls = 0xE67520;
 
-            const light1 = new THREE.PointLight(colorSkulls, 200, 13, 1) ;
+/*             const light1 = new THREE.PointLight(colorSkulls, 200, 13, 1) ;
             light1.position.set(0,26,10);
             light1.castShadow = true;
             light1.shadow.mapSize.width = 4096 ; // default
@@ -472,7 +454,7 @@
             const light5 = new THREE.PointLight(0x532D00, 2.5, 10, 0) ;
             light5.position.set(0,7,20);
             scene.add(light5);
-
+ */
 
 
             //only needed for the hand model positioning on the y axis
@@ -484,7 +466,7 @@
             var fireDepth  = 3;
             var sliceSpacing = 4;
 
-            var fire = new VolumetricFire(fireWidth,fireHeight,fireDepth,sliceSpacing,camera);
+/*             var fire = new VolumetricFire(fireWidth,fireHeight,fireDepth,sliceSpacing,camera);
             var fire2 = new VolumetricFire(3,8,1,2,camera);
             var fire3 = new VolumetricFire(4,8,2,4,camera);
 
@@ -495,7 +477,7 @@
             scene.add( fire.mesh );
             scene.add( fire2.mesh );
             scene.add( fire3.mesh );
-
+ */
             //to show all materials without light
             //scene.overrideMaterial = new MeshBasicMaterial({color: 'green'});
             
