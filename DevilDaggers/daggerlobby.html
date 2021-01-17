@@ -34,7 +34,7 @@
             let prevTime = performance.now();
             let slerp = new THREE.Quaternion();
 
-/*             var textMaterial = new THREE.ShaderMaterial({
+            var textMaterial = new THREE.ShaderMaterial({
                 uniforms: {
                     color1: {
                     value: new THREE.Color(0x3c3c3c)
@@ -63,7 +63,7 @@
                     }
                 `,
                 wireframe: false
-                }); */
+                });
 
             //The scene and the Perspective Camera
             var scene = new THREE.Scene();
@@ -324,7 +324,7 @@
             let rank2URL = "https://devildaggers.info/api/leaderboards/user/by-rank?rank=2";
             let rank3URL = "https://devildaggers.info/api/leaderboards/user/by-rank?rank=3";
 
-/*             fetch(rank1URL)
+            fetch(rank1URL)
             .then(response => response.json())
             .then(data => {
                 loaderFORFONT.load( 'threejs/font/Goethe_Bold.json', function ( font ) {
@@ -370,8 +370,8 @@
             yeyeyeye = true;
             scene.add( rank2Username );
             } );
-            }); */
-/* 
+            });
+
             fetch(rank3URL)
             .then(response => response.json())
             .then(data => {
@@ -394,7 +394,7 @@
             yeyeyeyeye = true
             scene.add( rank3Username );
             } );
-            }); */
+            });
 
             
             
@@ -521,7 +521,7 @@
                 fire2.update( elapsed );
                 fire3.update( elapsed ); */
 
-/*                 if(yeyeye && yeyeyeye && yeyeyeyeye)
+                if(yeyeye && yeyeyeye && yeyeyeyeye)
                 {
                     camera.getWorldDirection(cameraDirection);
                     //we are poor and pointerlock controls doesnt work with raycasting so this braindead
@@ -571,7 +571,7 @@
 
 
                     
-                } */
+                }
                
 /*                 //light hovering
                 if(light1.position.y > 28 && !lightBackUp )
