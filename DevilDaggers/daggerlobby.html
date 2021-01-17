@@ -466,7 +466,7 @@
             var fireDepth  = 3;
             var sliceSpacing = 4;
 
-/*             var fire = new VolumetricFire(fireWidth,fireHeight,fireDepth,sliceSpacing,camera);
+            var fire = new VolumetricFire(fireWidth,fireHeight,fireDepth,sliceSpacing,camera);
             var fire2 = new VolumetricFire(3,8,1,2,camera);
             var fire3 = new VolumetricFire(4,8,2,4,camera);
 
@@ -477,7 +477,7 @@
             scene.add( fire.mesh );
             scene.add( fire2.mesh );
             scene.add( fire3.mesh );
- */
+
             //to show all materials without light
             //scene.overrideMaterial = new MeshBasicMaterial({color: 'green'});
             
@@ -517,9 +517,9 @@
                 const time = performance.now();
                 var elapsed = clock.getElapsedTime();
 
-/*                 fire.update( elapsed );
+                fire.update( elapsed );
                 fire2.update( elapsed );
-                fire3.update( elapsed ); */
+                fire3.update( elapsed );
 
                 if(yeyeye && yeyeyeye && yeyeyeyeye)
                 {
@@ -617,17 +617,17 @@
                 }
                  */
              
-/*                 //dagger is loaded
+                //dagger is loaded
                 if(hasLoaded)
                 {
                     dagger.rotation.z += 0.005; 
                     if(dagger.position.y < 2 && daggerBackup)
                     {
-                        light4.position.y += 0.004;
+                      //  light4.position.y += 0.004;
                         dagger.position.y += 0.004;
                     }else
                     {
-                        light4.position.y -= 0.004;
+                      //  light4.position.y -= 0.004;
                         dagger.position.y -= 0.004;
                         daggerBackup = false;
                     }
@@ -637,7 +637,7 @@
                     }
 
                     
-                } */
+                }
    
                 if(hasLoadedHand)
                 {
