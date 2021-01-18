@@ -341,7 +341,7 @@
             var rank1Username = new THREE.Mesh( textGeo, textMaterial );
             rank1Username.position.set( -0.3, 16, 10 );
             rank1Username.rotation.set(0,0,0);
-            rank1Username.visible = true;
+            rank1Username.visible = false;
             rank1Text = rank1Username;
             yeyeye = true;
             scene.add( rank1Username );
@@ -365,7 +365,7 @@
             var rank2Username = new THREE.Mesh( textGeo, textMaterial );
             rank2Username.position.set( -0.3, 16, 10 );
             rank2Username.rotation.set(0,0,0);
-            rank2Username.visible = true;
+            rank2Username.visible = false;
             rank2Text = rank2Username;
             yeyeyeye = true;
             scene.add( rank2Username );
@@ -389,7 +389,7 @@
             var rank3Username = new THREE.Mesh( textGeo, textMaterial );
             rank3Username.position.set( -0.3, 16, 10 );
             rank3Username.rotation.set(0,0,0);
-            rank3Username.visible = true;
+            rank3Username.visible = false;
             rank3Text = rank3Username;
             yeyeyeyeye = true
             scene.add( rank3Username );
@@ -529,7 +529,7 @@
                     camera.getWorldDirection(cameraDirection);
                     //we are poor and pointerlock controls doesnt work with raycasting so this braindead
                     //halfass solution is here temporary which probably will be constantly considering
-                    //i do not want to open this file every again
+                    //i do not want to open this file ever again
                     if(cameraDirection.x < -0.12 || cameraDirection.x > 0.2 || cameraDirection.y < 0.42 || cameraDirection.y > 0.75 )
                     {
                         rank1Text.visible = false;
@@ -538,7 +538,7 @@
                     {
                         rank1Text.visible = true;
                         rank1Text.position.z = cameraDirection.z +7.5;
-                        rank1Text.position.x = cameraDirection.x *15 + -2;
+                        rank1Text.position.x = cameraDirection.x *15 + -1.5;
                         rank1Text.position.y = cameraDirection.y *20 + 4 ;
                         rank1Text.rotation.x = cameraDirection.x;
                       //  rank1Text.rotation.y = cameraDirection.y;
@@ -553,7 +553,7 @@
                     {
                         rank2Text.visible = true;
                         rank2Text.position.z = cameraDirection.z +7.5;
-                        rank2Text.position.x = cameraDirection.x *16 + -4.3;
+                        rank2Text.position.x = cameraDirection.x *16 + -3.5;
                         rank2Text.position.y = cameraDirection.y *20 + 5 ;
                         rank2Text.rotation.y = cameraDirection.y;
                         //rank2Text.rotation.y = 0.5;

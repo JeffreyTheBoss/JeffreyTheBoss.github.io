@@ -57,8 +57,11 @@ xhr.onload = function() {
             var node = document.createElement("SPAN");
             node.setAttribute('title', "User ID: "+converted.entries[i].id);
             var nodeDEL = document.createElement("DEL");
+            var nodeA = document.createElement("A");
+            nodeA.setAttribute('href',"daggerlobby.html" );
             var textnode = document.createTextNode(converted.entries[i].rank + ". " + "Erik Cornerhead" + " " + setkomma(converted.entries[i].time));
-            nodeDEL.appendChild(textnode);
+            nodeA.appendChild(textnode);
+            nodeDEL.appendChild(nodeA);
             node.appendChild(nodeDEL);
             table.appendChild(node);
         }else
