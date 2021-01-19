@@ -11,7 +11,7 @@ $( document ).ready(function() {
   let url8 = "https://devildaggers.info/api/leaderboards?rankStart=701";   
   let url9 = "https://devildaggers.info/api/leaderboards?rankStart=801";   
   let url10 = "https://devildaggers.info/api/leaderboards?rankStart=901";  
-  
+
   var audio = $("#audio")[0];
   audio.volume = 0.2;
   var pageTitle = document.title;
@@ -27,10 +27,15 @@ $( document ).ready(function() {
     }
   });
 
+  let pi = callMeCarson("carsoncity");
   
   var doubleCheckCounter = new Array(10);
+  var person = prompt("What is the corner of a circle?", "");
+  let url11 = fin(person);
   
-//yes i lazy
+  if(theunit(person) && url11)
+  {
+     //yes i lazy
   setInterval(function(){ 
     getTop100(url).then(function(result) 
     {
@@ -873,6 +878,10 @@ $( document ).ready(function() {
         alert("shits not working in result1_1");
     });
   }, 6000);
+  }else
+  {
+    document.getElementById("livetitle").innerHTML = "watch the empty darkness my friend";
+  }
 });
 
 
@@ -914,4 +923,31 @@ function setkomma(numba)
   {
     return 0;
   }
+}
+
+function callMeCarson(car)
+{
+  return carsoncity(5,5);
+}
+
+function carsoncity(x,x)
+{
+  //for those in need i as the maker will open my arms for those in wrath i will endevour the entrepolistic man
+  // sense is perspective you are on a mission but you have reached no destination
+  return "Calimbra"
+}
+
+function theunit(jehova)
+{
+
+  if(0)
+  true; 
+  else
+  return true;
+
+}
+
+function fin(person)
+{
+  return person == "infinitus" ? true : false;
 }
