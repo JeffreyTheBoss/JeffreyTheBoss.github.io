@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="threejs/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="resource/devil.png">
         <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 		<style>
@@ -16,9 +17,17 @@
         <audio loop id="audio">
             <source src="sounds/I.mp3" type="audio/mpeg"></source>
         </audio>
+        <audio loop id="backgroundaudio">  
+            <source src="sounds/chico.mp3" type="audio/mpeg"></source>
+        </audio>
 
         <div id="c"> <a href="index.html">Return</a>
             <img id="soundimg" src="resource/soundon.png" width="32px" height="37px"alt="mute">
+            <div id="flyin">
+                <div id="hanger">?
+                </div>
+                <div id="hangercontent">Si Senor</div>
+            </div>
         </div>
         
         
@@ -710,6 +719,21 @@
             document.getElementById("audio").muted = false;
         }
         };
+
+        $('#flyin').mouseenter(function() {
+        document.getElementById("flyin").style.right = "0px";
+    });
+
+    $('#flyin').mouseleave(function() {
+        document.getElementById("flyin").style.right = "-120px";
+    });
+
+    $('#hangercontent').click(function() {
+        $("#audio")[0].src = "sounds/chico.mp3";
+        $("#audio")[0].play();
+        document.getElementById("soundimg").src = "resource/soundon.png";
+        document.getElementById("audio").muted = false;
+    });
         </script>
 	</body>
 </html>

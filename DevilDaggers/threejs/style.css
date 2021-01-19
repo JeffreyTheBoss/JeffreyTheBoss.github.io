@@ -32,4 +32,29 @@ a {
   right: 10px;
   top: 10px;
 }
+
+#flyin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 80%;
+  right: -110px;
+  font-size: 25px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#hanger {
+  width: 40px;
+  background-color: white;
+  color: black;
+  padding: 0px 10px;
+}
+
+#hangercontent {
+  background-color: #520600;
+  cursor: pointer;
+  padding: 0px 10px;
+}
 /*# sourceMappingURL=style.css.map */
