@@ -6,15 +6,22 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="threejs/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="resource/devil.png">
+        <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 		<style>
 			body { margin: 0; }
 			canvas { display: block; }
 		</style>
 	</head>
 	<body>
-        <div id="c"> <a href="index.html">Return to reality</a></div>
-        
+        <audio loop id="audio">
+            <source src="sounds/I.mp3" type="audio/mpeg"></source>
+        </audio>
 
+        <div id="c"> <a href="index.html">Return</a>
+            <img id="soundimg" src="resource/soundon.png" width="32px" height="37px"alt="mute">
+        </div>
+        
+        
         <script src="threejs/js/three.js"></script>
         <script src="threejs/js/VolumetricFire.js"></script>
 		<script type="module">
@@ -492,6 +499,7 @@
             document.body.addEventListener( 'click', function () {
                 //lock mouse on screen
                 controls.lock();
+                document.getElementById("audio").play();
             }, false );
 
             controls.addEventListener( 'lock', function () {
@@ -687,7 +695,22 @@
                 renderer.render( scene, camera );
 }
 
-		</script>
+        </script>
+        
+        <script>
+                        document.getElementById("soundimg").onclick = function() {
+
+        if(document.getElementById("audio").muted == false)
+        {
+            document.getElementById("soundimg").src = "resource/soundoff.png";
+            document.getElementById("audio").muted = true;
+        }else
+        {
+            document.getElementById("soundimg").src = "resource/soundon.png";
+            document.getElementById("audio").muted = false;
+        }
+        };
+        </script>
 	</body>
 </html>
             

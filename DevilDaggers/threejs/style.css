@@ -9,12 +9,27 @@
 }
 
 a {
+  font-family: 'goethebold' ,sans-serif;
   position: absolute;
+  font-size: 30px;
+  text-decoration: none;
   top: 10px;
   width: 100%;
   text-align: center;
   z-index: 100;
   display: block;
-  color: red;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3a2a), color-stop(#c71e11), color-stop(#520600), to(#ff3a2a));
+  background-image: linear-gradient(180deg, #ff3a2a, #c71e11, #520600, #ff3a2a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#soundimg {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  right: 10px;
+  top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
