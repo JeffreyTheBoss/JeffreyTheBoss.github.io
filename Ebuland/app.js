@@ -105,13 +105,60 @@ window.setInterval(function(){
     
   };
 
-
   function sendMail(form) {
 
    // let message = document.getElementById("text").value;
     let mail = document.getElementById("email").value;
       readTextFile("l4d2spam.txt", mail);
-    
+
+    return false;
+  }
+
+// simple xmlh request to read the contents of a file (txt) in and then send a random line of it to the email provided
+   function readTextFile(file, mail)
+{
+    let rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                lines = rawFile.responseText.split("\n");
+
+                let random = Math.floor(Math.random() * 349); 
+
+                sendEmail(lines[random], mail);
+ 
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function sendEmail(body,mail) {
+
+    var tempParams =
+    {
+      from_name: "ebuland",
+      to_name: mail,
+      message: body,
+    };
+
+    emailjs.send("service_14ktj98", "template_hjxxych", tempParams)
+    .then(function(res){
+      console.log("success", res.status);
+      alert("you got mail")
+    })
+} 
+
+/*   function sendMail(form) {
+
+   // let message = document.getElementById("text").value;
+    let mail = document.getElementById("email").value;
+      readTextFile("l4d2spam.txt", mail);
+
     
     return false;
   }
@@ -157,4 +204,4 @@ function sendEmail(body,mail) {
 	}).then(
 		message => alert("you got mail, we fast")
 	);
-}
+} */
