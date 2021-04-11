@@ -1,28 +1,25 @@
-/*Global standards*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body 
+{
   max-width: 100%;
   overflow-x: hidden;
-
   scroll-behavior: smooth;
-}
-
-body {
   font-family: Verdana, sans-serif;
 }
 
-::selection {
+::selection 
+{
   background-color: darkgoldenrod;
   color: white;
 }
 
-::placeholder {
+::placeholder 
+{
   color: white;
 }
 
@@ -110,17 +107,8 @@ header nav a:hover {
   background-color: #717171;
 }
 
-.Slide3box {
-  color: #1a1918;
-}
-
-.Slide3box:hover {
-  color: #ab7e00;
-  opacity: 0.8;
-}
-
 .slidecontent1 {
-  color: #ebe9e4;
+  color: white;
   bottom: 520px;
   -webkit-animation-name: fadeinslide1;
   -webkit-animation-duration: 3s;
@@ -155,7 +143,7 @@ header nav a:hover {
 }
 
 .slidecontent1 button {
-  background-color: #568da3;
+  background-color: #568ce3;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -164,15 +152,13 @@ header nav a:hover {
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
-.slidecontent1 button:hover {
-  background-color: #5d98b0;
-}
+
 
 .slidecontent2 {
-  color: #d2d5d9;
+  color: white;
   -webkit-animation-name: fadeinslide1;
   -webkit-animation-duration: 3s;
   animation-name: fadeinslide1;
@@ -180,7 +166,8 @@ header nav a:hover {
 }
 
 .slidecontent2 button {
-  background-color: #464b52;
+  background-color: #568ce3;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -189,15 +176,13 @@ header nav a:hover {
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
-.slidecontent2 button:hover {
-  background-color: #5c626b;
-}
+
 
 .slidecontent3 {
-  color: #f0f2f5;
+  color: white;
   margin-bottom: 120px;
   -webkit-animation-name: fadeinslide1;
   -webkit-animation-duration: 3s;
@@ -215,15 +200,16 @@ header nav a:hover {
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
-.slidecontent3 button:hover {
+.slidecontent3 button:hover, .slidecontent2 button:hover, .slidecontent1 button:hover, .slidecontent4 button:hover, .slidecontent5 button:hover
+{
   background-color: #66a1ff;
 }
 
 .slidecontent4 {
-  color: lightgrey;
+  color: white;
   -webkit-animation-name: fadeinslide1;
   -webkit-animation-duration: 3s;
   animation-name: fadeinslide1;
@@ -231,7 +217,8 @@ header nav a:hover {
 }
 
 .slidecontent4 button {
-  background-color: #89909c;
+  background-color: #568ce3;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -240,15 +227,12 @@ header nav a:hover {
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
-.slidecontent4 button:hover {
-  background-color: #969ca8;
-}
 
 .slidecontent5 {
-  color: #612c2c;
+  color: white;
   margin-bottom: 70px;
   -webkit-animation-name: fadeinslide1;
   -webkit-animation-duration: 3s;
@@ -257,7 +241,8 @@ header nav a:hover {
 }
 
 .slidecontent5 button {
-  background-color: #8c3737;
+  background-color: #568ce3;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -266,12 +251,9 @@ header nav a:hover {
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
-.slidecontent5 button:hover {
-  background-color: #9e3f3f;
-}
 
 @media only screen and (min-width: 825px) {
   .opennavbutton {
@@ -852,42 +834,45 @@ header nav a:hover {
 }
 
 .mainlivestreamdiv {
+  display: flex;
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 12%;
+  top: 5%;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 80%;
+  width: 69%;
   margin: auto;
   text-align: center;
 }
 
 .livestreamiframe {
-  display: inline-block;
   max-width: 1000px;
   margin: auto;
   width: 100%;
-  height: 800px;
+  height: 600px;
+  justify-content: center;
 }
 
 .livestreamchatsection {
-  display: inline-block;
+
   background-color: #361f4d;
   width: 100%;
-  max-width: 400px;
-  margin-left: -6px;
+  max-width: 350px;
   font-family: Montserrat, sans-serif;
+  height: 542px;
+  margin-top: 161px;
 }
 
 #messageBody {
-  display: inline-block;
+
   background-color: #41265c;
   width: 100%;
   max-width: 350px;
   text-align: left;
-  height: 763px;
+  height: 100%;
+
   overflow: auto;
 }
 
@@ -922,22 +907,24 @@ header nav a:hover {
 
 .livestreamchatinput input[type="text"] {
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   background-color: #361f4d;
   color: white;
   padding: 12px 20px;
-  margin-right: 30px;
+  margin-right: 15px;
   border-radius: 4px;
   font-size: 12px;
   border: none;
 }
 
 .livestreamchatinput input[type="submit"] {
-  padding: 5px;
+  padding: 10px;
   background-color: indianred;
   border: none;
   color: white;
   border-radius: 20px;
+  
+
 }
 
 .livestreamchatinput input[type="submit"]:hover {
@@ -1006,7 +993,7 @@ header nav a:hover {
   display: inline-block;
   width: 100%;
   padding: 50px 0px;
-  background-color: darkgoldenrod;
+  background-color: rgb(145, 118, 50);
 }
 
 .floatleft {
@@ -1076,7 +1063,7 @@ header nav a:hover {
   margin: auto;
   width: 100%;
   font-family: Montserrat, sans-serif;
-  background-color: #ede7d8;
+  background-color: #ffffff;
 }
 
 #horseshopcontainer2 a {
@@ -1139,8 +1126,7 @@ header nav a:hover {
   text-align: center;
   font-size: 30px;
   padding: 20px;
-  color: brown;
-  text-shadow: 3px -1px lightgray;
+  color: darkgoldenrod;
 }
 
 #legendaryjonathan {
