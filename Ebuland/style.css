@@ -107,8 +107,8 @@ textarea {
 }
 
 #sectionTwo {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3e546b), to(#bdc3c7));
-  background: linear-gradient(to bottom, #3e546b, #bdc3c7);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b9cde2), to(#bdc3c7));
+  background: linear-gradient(to bottom, #b9cde2, #bdc3c7);
   -webkit-clip-path: polygon(5% 0, 43% 0, 90% 100%, 50% 100%);
           clip-path: polygon(5% 0, 43% 0, 90% 100%, 50% 100%);
   min-height: 100vh;
@@ -136,11 +136,6 @@ textarea {
 #sectionTwo .protesisprogresschart img {
   border-radius: 2px;
   min-width: 200px;
-}
-
-#sectionTwo .protesisprogresschart img:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
 }
 
 #sectionTwo .protesisprogresschart h3 {
