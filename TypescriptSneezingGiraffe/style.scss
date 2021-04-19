@@ -1,0 +1,523 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+$base-color: #9A2FF5;
+$second-color: #F0D660;
+
+:root {
+  --splash-bg-color:  #9A2FF5;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+@function circumference($r){
+  $pi: 3.141592653;
+  @return 2*$pi*$r;
+}
+
+//!todo
+::selection {
+  color: white;
+  background: grey;
+}
+
+.mainIMG
+{
+    z-index: -1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    animation-name: idlecorn;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: opacity 2s ease-in;
+    max-width:100%;
+max-height:100%;
+    
+}
+
+/*
+    Animation for the Main IMG
+*/
+@keyframes idlecorn {
+  0%, 100% {
+    transform: translateY(-2.5%);
+  
+  }
+  50% {
+    transform: translateY(0);
+   
+  }
+}
+
+@keyframes sideswipe {
+  0%, 100% {
+    transform: translateX(-3%);
+  
+  }
+  50% {
+    transform: translateX(0);
+   
+  }
+}
+
+@keyframes sideswipeENTRY {
+  0% {
+    transform: translateX(0);
+    
+  
+  }
+  50%
+  {
+    transform: translateX(-50.5%);
+  }
+  100% {
+    transform: translateX(0);
+   
+  }
+}
+
+@keyframes boxshadowboy {
+  0% {
+    filter: drop-shadow(20px 5px 100px $base-color);
+  }
+  50%
+  {
+    filter: drop-shadow(20px 5px 50px #7e27ca);
+  }
+  100% {
+    filter: drop-shadow(20px 5px 100px $base-color);
+   
+  }
+}
+/*
+    Animation for the Main IMG
+*/
+.shadowboy
+{
+  animation : boxshadowboy 3s infinite ease-in-out;
+	filter: drop-shadow(20px 20px 100px $base-color);
+}
+.clippathboy
+{
+ transition: clip-path 2s ease-out;
+  clip-path: circle(0.7% at 100% 0%);
+  opacity: 0.8;
+  background-color: #9A2FF5 ;
+}
+
+.evidenceButton
+{
+  transition: left 2s ease-in-out 2.5s, background-color 0.5s ease-in-out,color 0.5s ease-in-out;
+  top: 640px;
+  border-color: $base-color !important;
+  &:focus
+  {
+    outline: none;
+  }
+  &:hover
+  {
+    animation: none;
+  }
+}
+.link1
+{
+
+    animation: sideswipe 1.8s infinite ease-in-out, sideswipeENTRY 1.5s 1 ease-in-out 5s;
+    color: $base-color;
+    &:hover
+    {
+        right: 0;
+    }
+}
+
+.thirdText
+{
+    top: 450px;
+}
+
+.burger {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    -webkit-tap-highlight-color: transparent; }
+    .burger .burger-lines:after {
+      left: 0;
+      top: -1em; }
+    .burger .burger-lines:before {
+      left: 1em;
+      top: 1em; }
+    .burger:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 150%;
+      width: 150%;
+      top: -25%;
+      left: -25%; }
+    .burger .burger-lines {
+      top: 50%;
+      margin-top: -0.125em; }
+      .burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {
+        pointer-events: none;
+        display: block;
+        content: '';
+        width: 100%;
+        border-radius: 0.25em;
+        background-color: $second-color;
+        height: 0.25em;
+        position: absolute;
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0); }
+      .burger .burger-lines:after {
+        left: 0;
+        top: -1em; }
+      .burger .burger-lines:before {
+        left: 1em;
+        top: 1em; }
+  .burger.burger-slip .burger-lines:after, .burger.burger-slip .burger-lines:before {
+    width: 2em; }
+  
+  .burger.burger-slip .burger-lines, .burger.burger-slip .burger-lines:after, .burger.burger-slip .burger-lines:before {
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  
+  .burger.burger-slip.open .burger-lines {
+    -webkit-transform: translateX(-2em);
+        -ms-transform: translateX(-2em);
+            transform: translateX(-2em);
+    background-color: transparent; }
+  
+  .burger.burger-slip.open .burger-lines:before, .burger.burger-slip.open .burger-lines:after {
+    left: 0.5em;
+    top: 0px; }
+  
+  .burger.burger-slip.open .burger-lines:before {
+    -webkit-transform: translateX(2em) rotate(135deg);
+        -ms-transform: translateX(2em) rotate(135deg);
+            transform: translateX(2em) rotate(135deg); }
+  
+  .burger.burger-slip.open .burger-lines:after {
+    -webkit-transform: translateX(2em) rotate(-135deg);
+        -ms-transform: translateX(2em) rotate(-135deg);
+            transform: translateX(2em) rotate(-135deg); }
+
+            .splash {
+              position:absolute;
+              top:40px;
+              right:40px;
+              width: 1px;
+              height: 1px;
+              
+              &::after {
+                content:"";
+                display:block;
+                position:absolute;
+                border-radius:50%;
+                background-color:var(--splash-bg-color);
+                
+                // screen diameter can be 142vmax at most,
+                // circle needs to be twice that size to cover it
+                width:284vmax;
+                height:284vmax;
+                top:-142vmax;
+                left:-142vmax;
+                
+                transform: scale(0);
+                transform-origin:50% 50%;
+                transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                
+                // will-change tells the browser we plan to 
+                // animate this property in the near future
+                will-change:transform;
+              }
+            }
+
+            .nav:target,
+            .nav--open {
+              
+              //scale the background circle to full size
+              > .splash::after {
+                transform:scale(1);
+              }
+            }
+
+
+            .valign {
+              position: fixed;
+              top: 50%;
+              left: 0px;
+              right :0px;
+              transform: translateY(-50%);
+              transition: all 5s ease-in-out;
+          }
+
+          .firstText
+          {
+            animation: opacityText 1.5s  ease-in-out;
+            transition: left 1.5s ease-in-out;
+          }
+
+          .secondText
+          {
+            animation: opacityText 2s  ease-in-out;
+            transition: left 2s ease-in-out;
+          }
+          .thirdText
+          {
+            animation: opacityText 3s  ease-in-out;
+            transition: left 3s ease-in-out;
+          }
+
+          .fileslidecontent
+          {
+            transition: height 0.5s ease-in-out, padding 0.5s linear;
+          }
+
+
+          @keyframes opacityText {
+            0%{
+              opacity: 0;
+            }
+            90%{
+              opacity: 0.5;
+            }
+            100% {
+             opacity: 1; 
+            }
+          }
+
+          //! medias
+
+          @media only screen and (max-width: 460px) {
+            .slidercircles {
+              display:none;
+            }
+          }
+
+
+          @media only screen and (max-width: 640px) {
+
+            #mainContainer
+            {
+              height: 600px;
+            }
+
+            .mainIMG
+            {
+              margin-top:  75px;
+            }
+
+            .firstText ,.secondText, .thirdText
+            {
+              
+              animation: none;
+            }
+            .firstText
+            {
+              margin-top:100px;
+            }
+
+            .evidenceButton
+            {
+              background-color: $base-color;
+              color: white;
+            }
+          }
+
+
+          @media only screen and (max-width: 1200px) {
+
+            .clippathboy
+            {
+                clip-path: circle(30.7% at 100% 11%);
+            }
+          }
+
+
+          @media only screen and (max-width: 900px) {
+
+            .clippathboy
+            {
+                clip-path: circle(15.7% at 100% 5%);
+            }
+          }
+
+
+          
+
+          @media only screen and (min-width: 640px) {
+
+            .fill {
+              overflow:hidden;
+            }
+            
+            
+            .fill:before {
+              content: "";
+              position: absolute;
+              background: $base-color;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              top: 100%;
+              z-index: -1;
+              transition: top 0.09s ease-in;
+            }
+            
+            .fill:hover:before {
+              top: 0;
+            }
+
+
+          }
+
+
+
+          .socialLink
+          {
+            transition: 0.3s ease-in-out;
+            fill: $second-color;
+            &:hover
+            {
+              fill: $base-color;
+              transform: rotate(15deg);
+            }
+          }
+
+
+
+          .contact
+          {
+            border-color: $base-color !important;
+          }
+
+          .years
+          {
+            color: $base-color;
+          }
+
+          .slidercircles
+          {
+            background-color: $second-color;
+          }
+
+
+          //!testo
+
+
+          
+.circle-container {
+  $particleNum: 200;
+  $particleColor: hsl(56, 69%, 61%);
+
+  position: absolute;
+  transform: translateY(-10vh);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    background-image: radial-gradient(
+      $second-color,
+      $second-color 10%,
+      hsla(61, 97%, 58%, 0) 56%
+    );
+
+    animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+
+    @keyframes fade-frames {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes scale-frames {
+      0% {
+        transform: scale3d(0.4, 0.4, 1);
+      }
+
+      50% {
+        transform: scale3d(2.2,2.2, 1);
+      }
+
+      100% {
+        transform: scale3d(0.4, 0.4, 1);
+      }
+    }
+  }
+
+  $particleBaseSize: 20;
+
+  
+  @for $i from 1 through $particleNum {
+    &:nth-child(#{$i}) {
+      $circleSize: random($particleBaseSize);
+      width: $circleSize + px;
+      height: $circleSize + px;
+
+      $startPositionY: random(10);
+      $framesName: "move-frames-" + $i;
+      $moveDuration: 40000 + random(9000) + ms;
+
+      animation-name: #{$framesName};
+      animation-duration: $moveDuration;
+      animation-delay: random(37000) + ms;
+
+      @keyframes #{$framesName} {
+        from {
+          transform: translate3d(
+            #{random(30)+80 + vw},
+            #{$startPositionY + vh},
+            0
+          );
+        }
+
+        to {
+          transform: translate3d(
+            #{random(100)-150 + vw},
+            #{ $startPositionY - random(500)+500  + vh},
+            0
+          );
+        }
+      }
+
+      .circle {
+        animation-delay: random(1000) + ms;
+      }
+    }
+  }
+}

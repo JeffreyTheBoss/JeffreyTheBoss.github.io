@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneezing Giraffe</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="animations.css" >
+    <link href="tailwind.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?">
+    <link rel="manifest" href="favicon/site.webmanifest?">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg?" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_er20giXu10iha6sNpqWRV");
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+</head>
+
+<body class="text-gray-900 overflow-x-hidden">
+
+    <div id="testorino" class="z-10"></div>
+
+        
+    <!-- Main Container -->
+
+    <span class="shadowboy invisible sm:visible w-full h-full absolute top-0 right-0">
+        <div class="clippathboy invisible sm:visible bg-yellow-400 z-10 w-full h-full absolute top-0 right-0"></div>
+    </span>
+
+<div id="mainContainer" class="text-center sm:h-screen">
+   <img src="img/test.png" alt="Main Background Unicorn" class="mainIMG opacity-0 select-none"> 
+
+   <div class="homebutton z-0">
+    <img src="img/logo/logo_small_icon_only_inverted.png" alt="homebutton logo" width="80px" class="m-0 p-4 sm:p-2 sm:m-4 select-none">
+</div>
+
+   <div class="burger fixed burger-slip visible sm:invisible right-6 top-6 cursor-pointer z-20">
+    <div class="burger-lines"></div>
+  </div>
+
+  <nav id="nav" class="nav sm:invisible visible" role="navigation">
+
+    <ul class="nav__menu hidden z-20 m-auto w-auto valign text-5xl" id="menu"aria-label="main navigation" >
+
+        <li class="nav__item_Contact hover:text-gray-300 cursor-pointer sm:hidden font-black">Contact</li>
+        <li class="nav__item hover:text-gray-300  sm:hidden font-black"><a href="#" class="nav__link">Contest</a></li>
+        <li class="nav__item hover:text-gray-300  sm:hidden font-black"><a href="#" class="nav__link">Merch</a></li>
+
+      </ul>
+
+    <div class="splash fixed z-10"></div>
+  </nav>
+ 
+
+
+
+    <div class="bg-opacity-0 contact fixed py-2 px-4 mt-2 rounded-full invisible sm:visible right-1 top-1 z-10 
+    transition-all duration-500 ease-in-out shadow-lg border-2 fill hover:text-white" onclick="return false;">
+        <a href="#" class="sm:text-2xl tracking-wide select-none">Contact</a>
+    </div>
+
+    <div class="fixed right-2 top-20 bg-black text-gray-100 w-72 p-4 rounded hidden contactBox z-50" >
+
+        <form class="" onsubmit="return sendMail(this)">
+
+          <div class="">
+            <label for="text" class="text-white">Whats on your mind?</label>
+            <span class="py-1.5 px-3 ml-10 cursor-pointer bg-red-400 rounded-full hover:bg-red-600 hover:text-white"
+            onclick="document.getElementsByClassName('contactBox')[0].classList.add('hidden');"
+            >X</span>
+
+            <textarea id="text"name="text" cols="30" rows="4" class="text-gray-800 my-2 rounded-sm mt-4  bg-gray-100"placeholder="I would like to..." required></textarea> 	
+          </div>
+          <div class="">
+            <label for="exampleDropdownFormEmail1">Where do we answer?</label>
+            <input type="email" class="form-control my-2 text-gray-800 rounded-sm bg-gray-100" id="email" required size="27"placeholder="email@example.com">
+          </div>
+            <div class="">
+              <button type="submit" class="p-2 mt-2 bg-red-400 rounded-full transition-all duration-500 ease-in-out hover:bg-red-600 hover:text-white">Send</button>
+            </div>
+         
+        </form>
+      </div>
+
+
+
+    <h1 class="firstText text-7xl  sm:text-9xl select-none sm:absolute -left-full top-48 opacity-0 z-20">Giraffes</h1>
+    <h1 class="secondText text-7xl   sm:text-9xl select-none  sm:absolute -left-full  top-80 opacity-0">Do</h1>
+    <h1 class="thirdText text-7xl  sm:text-9xl select-none sm:absolute -left-full  opacity-0">Sneeze.</h1>
+
+    <button class="evidenceButton mt-10 sm:mt-0  bg-opacity-0 py-3 px-6 rounded-full sm:absolute lg:-left-full text-2xl border-2
+    tracking-widest cursor-pointer  shadow-lg ease-in-out sm:animate-pulse z-20 fill hover:text-white"
+    onclick="$('html, body').animate({scrollTop: $('#historicalContainer').offset().top}, 1000);"
+    >Evidence
+    </button>
+
+    <a href="#" class="invisible sm:visible">
+        <div class="link1  absolute -right-24 top-80 cursor-pointer w-40 transition-all duration-700 ease-in-out z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-11 inline"fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+        </svg>
+        <p class="inline text-black font-bold">Meerch!</p>
+        </div>
+    </a>
+
+    <a href="#" class="invisible sm:visible">
+        <div class="link1  absolute -right-24 top-80 cursor-pointer w-40 mt-12 transition-all duration-700 ease-in-out z-10"><svg xmlns="http://www.w3.org/2000/svg" class="w-11 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+        </svg>
+        <p class="inline text-black font-bold">Contest</p>
+        </div>
+    </a>
+</div>
+
+    <!-- Historical Container-->
+<div id="historicalContainer" class="historicalContainer text-center bg-gray-100 overflow-hidden">
+
+    
+    <div class="explanationContainer mb-20 animatedParent animateOnce">
+        <h2 class="pt-10 font-thin years animated bounceInDown">1997 - 2020</h2>
+        <h2 class="sm:text-6xl text-4xl md:text-8xl font-black select-none animated bounceInDown">Historical Report</h2>
+    
+        <p class=" md:pt-10 pt-5 sm:text-3xl text-2xl md:text-3xl m-auto w-3/4 text-gray-400 animated bounceInLeft">For over 2 decades the existance of sneezing giraffes was denied brutally by all means from the government, so as the LAFP.
+        We archived every evidence to prove their maskerade.</p>
+    </div>
+
+    <div class="fileslider animatedParent animateOnce">
+
+        <div class="fileslidethumbnail bg-white w-3/4 m-auto p-6 shadow-xl cursor-pointer mb-10 border-2 animated bounceInUp">
+            <h3 class="filelidertitle text-black xl:text-4xl font-black sm:text-lg text-xs">25th May 2019 - Westwing Alabama Yorkshire</h3>
+
+            <div class="slidercircles sm:p-2 p-1 rounded-full w-0 relative xl:top-0 sm:-mb-6 -mb-6  -right-full sm:-top-0 top-1"></div>
+            <div class="slidercircles sm:p-2 p-1 rounded-full w-0 relative  xl:-top-12 sm:-mb-2 mb-2 -right-full sm:-top-10 -top-3"></div>
+            
+        </div>
+
+        <div class="fileslidecontent bg-white flex flex-col xl:flex-row xl:flex-wrap xl:justify-center shadow-xl w-4/6 m-auto mb-10 overflow-hidden animated fadeInUp" data-collapsed="false" >
+            <h3 class="underline m-auto font-bold xl:text-4xl sm:text-2xl lg:text-3xl text-lg p-5">Photographical Proof of a set example in action.</h3>
+            <div class="leftfildesliderarea xl:w-2/5 w-auto xl:mb-16 text-xs sm:text-sm xl:text-base m-auto h-auto text-left">
+                <p class="p-5">Shot in kalembra zoo early morning from one of our agents dispatched for the northern epimenephenic district.
+    
+                    Depicting the nose extremities of an Hypatomus (Giraffe) exploding rapidly with a spit like fluid. Hence the clear view of a sneeze.
+                    <br><br>
+                    Defy level 5 Surroundings Enviroment Camera recorded near the area at given time and captured audio which supports the visual evidence 
+                    which has no audio. Profesionals are in the process to combine these 2 technological proofs to make 1 single double proof evidence piece.
+                </p>
+            </div>
+            <div class="rightfilesliderarea xl:w-2/5 sm:w-3/5 w-4/5 m-auto h-auto p-6 ">
+                <img src="img/evidence.jpg" alt="girafe evidence" class="border-black border-4 rounded ">
+                <p class="lg:text-sm tracking-tighter text-left text-xs p-2">Recorded with the DLS Hyper X nionlover cleanwide focus shot 194 using a wide angle calibration setting.</p>
+            </div>
+        </div>
+
+        <div class="fileslidethumbnail bg-white w-3/4 m-auto p-6 shadow-xl cursor-pointer mb-10">
+            <h3 class="filelidertitle text-black xl:text-4xl font-black sm:text-lg text-xs"> 12th January 2013 - Shzhebalion Kzebergistan</h3>
+
+            <div class="slidercircles sm:p-2 p-1  rounded-full w-0 relative xl:top-0 sm:-mb-6 -mb-6  -right-full sm:-top-0 top-1"></div>
+            <div class="slidercircles sm:p-2 p-1 rounded-full w-0 relative  xl:-top-12 sm:-mb-2 mb-2 -right-full sm:-top-10 -top-3"></div>
+            
+        </div>
+
+        <div class="fileslidecontent bg-white flex flex-col xl:flex-row xl:flex-wrap xl:justify-center shadow-xl w-4/6 m-auto overflow-hidden" style="height: 0px;"data-collapsed="true" >
+            <h3 class="underline m-auto font-bold xl:text-4xl sm:text-2xl lg:text-3xl text-lg p-5">The 3 Seaman of Georgia Interception by water.</h3>
+            <div class="leftfildesliderarea xl:w-2/5 w-auto xl:mb-16 text-xs sm:text-sm xl:text-base m-auto h-auto text-left">
+                <p class="p-5"> This Sighting was captured in the high mountain levels of Shzhebalion Kzebergistan on a sunny early year morning.
+    
+                    Hence its low quality the visuals are argueable. altough to the profesional eye this is a clear object in action this cannot be
+                    verified to 100%.
+                    <br><br>
+                    The marked area was shutdown by the local authorities after this incidence duo to markup and hiding the real happenings of this day.
+                    Several members of the community were dispateched to the location but upon arrival the cover up was already too far in progress.
+                </p>
+            </div>
+            <div class="rightfilesliderarea xl:w-2/5 sm:w-3/5 w-4/5 m-auto h-auto p-6 ">
+                <img src="img/evidence2.jpg" alt="girafe evidence" class="border-black border-4 rounded ">
+                <p class="lg:text-sm tracking-tighter text-left text-xs p-2">Recorded with a Samsung 9530 Ericson Phone on a very small epilevel weak lense camera (low quality).</p>
+            </div>
+        </div>
+
+        <div class="fileslidethumbnail bg-white w-3/4 m-auto p-6 shadow-xl cursor-pointer mb-10">
+            <h3 class="filelidertitle text-black xl:text-4xl font-black sm:text-lg text-xs"> 16th Dezember 2009 - Teheran Iran</h3>
+
+            <div class="slidercircles sm:p-2 p-1  rounded-full w-0 relative xl:top-0 sm:-mb-6 -mb-6  -right-full sm:-top-0 top-1"></div>
+            <div class="slidercircles sm:p-2 p-1 rounded-full w-0 relative  xl:-top-12 sm:-mb-2 mb-2 -right-full sm:-top-10 -top-3"></div>
+            
+        </div>
+
+        <div class="fileslidecontent bg-white flex flex-col xl:flex-row xl:flex-wrap xl:justify-center shadow-xl w-4/6 m-auto overflow-hidden" style="height: 0px;"data-collapsed="true" >
+            <h3 class="underline m-auto font-bold xl:text-4xl sm:text-2xl lg:text-3xl text-lg p-5">Stellar Lumen occurance of the warshow leftist activity.</h3>
+            <div class="leftfildesliderarea xl:w-2/5 w-auto xl:mb-16 text-xs sm:text-sm xl:text-base m-auto h-auto text-left">
+                <p class="p-5"> This view is more obscure duo to the device it was recorded with. The precise date and location cannot be determined.
+    
+                    Rumors and forshadowing lead to the conclusion of the the occurance happening in Teheran Iran at a sandwhich eating time.
+                    <br><br>
+                    Nobody was despatched to investigate this instance duo to lack of communication and failing communication in the facility.
+                    Each cooresponding agent was reprimanded and sent on vacation for the big failure of scaling this object and capturing the data correctly.
+                    <br><br>
+                    Correlating data and ongoing after investigation launched on XXXX-XX-XX this mission has not absolved and is in this THETA stage and prospering
+                    and the agents are eating grapes under the trees and i love it that they eat it so good.
+                </p>
+            </div>
+            <div class="rightfilesliderarea xl:w-2/5 sm:w-3/5 w-4/5 m-auto h-auto p-6 ">
+                <img src="img/evidence3.jpg" alt="girafe evidence" class="border-black border-4 rounded ">
+                <p class="lg:text-sm tracking-tighter text-left text-xs p-2">Shot with the membrane SSL1 hybrid camera (under cia development) device specs unknown.</p>
+            </div>
+        </div>
+
+        <div class="fileslidethumbnail bg-white w-3/4 m-auto p-6 shadow-xl cursor-pointer mb-10">
+            <h3 class="filelidertitle text-black xl:text-4xl font-black sm:text-lg text-xs"> 21th March 2002 - Le Terefice Ipanio Pairs</h3>
+
+            <div class="slidercircles sm:p-2 p-1    rounded-full w-0 relative xl:top-0 sm:-mb-6 -mb-6  -right-full sm:-top-0 top-1"></div>
+            <div class="slidercircles sm:p-2 p-1  rounded-full w-0 relative  xl:-top-12 sm:-mb-2 mb-2 -right-full sm:-top-10 -top-3"></div>
+            
+        </div>
+
+        <div class="fileslidecontent bg-white flex flex-col xl:flex-row xl:flex-wrap xl:justify-center shadow-xl w-4/6 m-auto overflow-hidden" style="height: 0px;"data-collapsed="true" >
+            <h3 class="underline m-auto font-bold xl:text-4xl sm:text-2xl lg:text-3xl text-lg p-5">Why would you even open the 4th slide.</h3>
+            <div class="leftfildesliderarea xl:w-2/5 w-auto xl:mb-16 text-xs sm:text-sm xl:text-base m-auto h-auto text-left">
+                <p class="p-5">You should not have come here. this level was not ment for you to be discovered
+    
+                    but you showed that you are one of those annoying people that like to check statements of others and dont just swallow their facts and go on with
+                    their lifes. you made a big mistake
+                    <br><br>
+                    of course you will now go to the 5th because you think you found a good joke hidden gem in the bottle your brain will lead you further and further
+                    down the cherry till you fall into the bottle if you not open the 5th slide you can return try for your own personality for once to resist the urge of a infant
+                    and you will be fine and go on with your life.
+                    this is your warning
+                </p>
+            </div>
+            <div class="rightfilesliderarea xl:w-2/5 sm:w-3/5 w-4/5 m-auto h-auto p-6 ">
+                <img src="img/evidence4.jpg" alt="girafe evidence" class="border-black border-4 rounded ">
+                <p class="lg:text-sm tracking-tighter text-left text-xs p-2">Recorded with your mothers hairbrush from her bathroom while she shower.</p>
+            </div>
+        </div>
+
+        <div class="fileslidethumbnail bg-white w-3/4 m-auto p-6 shadow-xl cursor-pointer mb-10">
+            <h3 class="filelidertitle text-black xl:text-4xl font-black sm:text-lg text-xs"> 2th May 1999 - Cornerfield left to anterwesting</h3>
+
+            <div class="slidercircles sm:p-2 p-1    rounded-full w-0 relative xl:top-0 sm:-mb-6 -mb-6  -right-full sm:-top-0 top-1"></div>
+            <div class="slidercircles sm:p-2 p-1  rounded-full w-0 relative  xl:-top-12 sm:-mb-2 mb-2 -right-full sm:-top-10 -top-3"></div>
+            
+        </div>
+
+        <div class="fileslidecontent bg-white flex flex-col xl:flex-row xl:flex-wrap xl:justify-center shadow-xl w-4/6 m-auto  overflow-hidden" style="height: 0px;"data-collapsed="true" >
+            <h3 class="underline m-auto font-bold xl:text-4xl sm:text-2xl lg:text-3xl text-lg p-5"> you g̴o̷t̶t̷a̸  s̸t̷i̷c̴k̷  y̶̛̼̽̈o̴̥̐͑u̴̫̻̔r̵̛̫͓͠  🤯 w̷̮̋h̶̘̓e̴̱͊r̶̬͠è̵͜ ̸͖̕i̴͓̒t̴̲͠ ̶̯̾d̷͔́ŏ̵̠ǹ̸͕t̴͊ͅ ̶̹̈́b̷̔͜é̷͖l̷̗̇o̷̜̎n̵̡͊g̴͔̾</h3>
+            <div class="leftfildesliderarea xl:w-2/5 w-auto xl:mb-16 text-xs sm:text-sm xl:text-base m-auto h-auto text-left">
+                <p class="p-5 yih">YOU THINK YOU CAN GET AWAY WITH THIS YOU THINK YOU CAN RING THE BELL OF THE DOOR OF THE BING BONG MAN OF THE KING KONG MAN OF THE SATAN
+                     OF THE SANTA CLAUSS OF AUSTRALIA YOU THINK YOU CAN GET AWAY YOU THINK JOKING IS NOT REAL
+                     <br><br>
+                     THOU SHALL NOT BE UNNPUNISHED FOR BEHAVIOR OF THIS KIND
+                     <br><br>
+                     AND I WHO WILL SHOW YOU YOUR WAYS ARE RIDICILOUYS LAUGHABLE UN FUNNY UN SERIOUS A YOUNG BOY YOYU ARE YOUR EXP[ERIENCE IS NOTHING IN COMPRHESNESION TO
+                      THOSE OF THE ASCENDED KIND
+                    <br><br>
+                    YOUR FOOLERY SHALL BE DETERMINED YOUR PATH SHALL BE DIVERGEND YOU WILL BE NOTICED AND NOTED HAS BEEN YOUR EXISTANCE AND FROM TODAY THE SIGN YOU HAVE BEEN 
+                    AWAITING ALL YOUR LIFE HAS SWITCHED AND IS NOW IN THE ACTIVE STATE SAY GOODBYE TO YOUR EXISTANCE
+                    <br><br>
+                    THE END IS NEAR YOUR PUNISHMENT LIES AHEAD THE INEVITABLE DEMISE YOU HAVE CONSTRUCTED ALL YOUR LIFE FOR WHAT FOR WHAT HAVE YOU MADE THIS PREMISE YOU WILL
+                    SOON BE OF THE EDUCATED KIND
+                </p>
+            </div>
+            <div class="rightfilesliderarea xl:w-2/5 sm:w-3/5 w-4/5 m-auto h-auto p-6 ">
+                <img src="img/theend.jpg" alt="girafe evidence" class="themoose border-black border-4 rounded ">
+                <p class="lg:text-sm tracking-tighter text-left text-xs p-2"> have you ever sticked your head in the oven and eaten the fish before it was ready.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+    <!-- Datachart Container (3d.js chart)-->
+<div id="datachartContainer " class="text-center animatedParent animateOnce">
+    <h2 class="sm:text-6xl text-4xl md:text-8xl font-black mt-4 sm:mt-20 mb-4 sm:mb-10 animated bounceInRight">Datachart of incidences</h2>
+    <div class="p-10">
+        <div class="chartContainer bg-gray-300 border-black border-2 shadow-lg m-auto max-w-7xl flex-grow rounded-sm animated bounceInUp">
+            
+            <canvas id="myChart"></canvas>
+</div>
+    </div>
+
+</div>
+
+<script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['1930','1935', '1940','1945', '1950','1955','1960','1965','1970','1975','1980','1985','1990','1995','2000','2005','2010','2015','2020'],
+                datasets: [{
+                    label: ' The Lint Abbey Surpression',
+                    backgroundColor: 'rgba(55, 55, 255, 0)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [25, 60, 40, 60, 50, 33, 36,40,60,56,62,59,33,22,55,56,56,44,22],
+                    tension: 0.4,
+                    
+                },{
+                    label: 'Chainlink cooperation incidence',
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    borderColor: 'rgb(255, 255, 132)',
+                    data: [14, 55, 59, 22, 80, 51, 42, 33,77,91,88,77],
+                    tension: 0.4,
+                },{
+                    label: 'Epinuptus',
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    borderColor: 'rgb(77, 155, 132)',
+                    data: [80, 88, 80, 89, 77, 75, 76, 71,66,69,55,62,55,49,45,42,50,39,34],
+                    tension: 0.4,
+                },{
+                    label: 'Hollywood Demotation',
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    borderColor: 'rgb(22, 55, 150)',
+                    data: [50, 55, 60, 65, 70, 75, 76, 68,44,33,22,11,5,12,14,15,17,44,55],
+                    tension: 0.4,
+                }
+            ]
+                
+              
+            },
+            
+
+            // Configuration options go here
+            options: {}
+        });
+
+           // chart.options.elements.line.tension = 0.000001;
+		//	chart.update();
+</script>
+
+    <!--Footer-->
+    <footer class="text-center bg-gray-500 p-4 overflow-hidden">
+        <h4 class="sm:text-3xl font-bold">1997 - 2020 © SneezinGiraffe</h4>
+        <div class="flex justify-center">
+        <a href="sneezinggiraffe.com" class="p-4 socialLink"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M13.144 8.171c-.035-.066.342-.102.409-.102.074.009-.196.452-.409.102zm-2.152-3.072l.108-.031c.064.055-.072.095-.051.136.086.155.021.248.008.332-.014.085-.104.048-.149.093-.053.066.258.075.262.085.011.033-.375.089-.304.171.096.136.824-.195.708-.176.225-.113.029-.125-.097-.19-.043-.215-.079-.547-.213-.68l.088-.102c-.206-.299-.36.362-.36.362zm13.008 6.901c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12s5.372-12 12-12c6.627 0 12 5.373 12 12zm-8.31-5.371c-.006-.146-.19-.284-.382-.031-.135.174-.111.439-.184.557-.104.175.567.339.567.174.025-.277.732-.063.87-.025.248.069.643-.226.211-.381-.355-.13-.542-.269-.574-.523 0 0 .188-.176.106-.166-.218.027-.614.786-.614.395zm6.296 5.371c0-1.035-.177-2.08-.357-2.632-.058-.174-.189-.312-.359-.378-.256-.1-1.337.597-1.5.254-.107-.229-.324.146-.572.008-.12-.066-.454-.515-.605-.46-.309.111.474.964.688 1.076.201-.152.852-.465.992-.038.268.804-.737 1.685-1.251 2.149-.768.694-.624-.449-1.147-.852-.275-.211-.272-.66-.55-.815-.124-.07-.693-.725-.688-.813l-.017.166c-.094.071-.294-.268-.315-.321 0 .295.48.765.639 1.001.271.405.416.995.748 1.326.178.178.858.914 1.035.898.193-.017.803-.458.911-.433.644.152-1.516 3.205-1.721 3.583-.169.317.138 1.101.113 1.476-.029.433-.37.573-.693.809-.346.253-.265.745-.556.925-.517.318-.889 1.353-1.623 1.348-.216-.001-1.14.36-1.261.007-.094-.256-.22-.45-.353-.703-.13-.248-.015-.505-.173-.724-.109-.152-.475-.497-.508-.677-.002-.155.117-.626.28-.708.229-.117.044-.458.016-.656-.048-.354-.267-.646-.53-.851-.389-.299-.188-.537-.097-.964 0-.204-.124-.472-.398-.392-.564.164-.393-.44-.804-.413-.296.021-.538.209-.813.292-.346.104-.7-.082-1.042-.125-1.407-.178-1.866-1.786-1.499-2.946.037-.19-.114-.542-.048-.689.158-.352.48-.747.762-1.014.158-.15.361-.112.547-.229.287-.181.291-.553.572-.781.4-.325.946-.318 1.468-.388.278-.037 1.336-.266 1.503-.06 0 .038.191.604-.019.572.433.023 1.05.749 1.461.579.211-.088.134-.736.567-.423.262.188 1.436.272 1.68.069.15-.124.234-.93.052-1.021.116.115-.611.124-.679.098-.12-.044-.232.114-.425.025.116.055-.646-.354-.218-.667-.179.131-.346-.037-.539.107-.133.108.062.18-.128.274-.302.153-.53-.525-.644-.602-.116-.076-1.014-.706-.77-.295l.789.785c-.039.025-.207-.286-.207-.059.053-.135.02.579-.104.347-.055-.089.09-.139.006-.268 0-.085-.228-.168-.272-.226-.125-.155-.457-.497-.637-.579-.05-.023-.764.087-.824.11-.07.098-.13.201-.179.311-.148.055-.287.126-.419.214l-.157.353c-.068.061-.765.291-.769.3.029-.075-.487-.171-.453-.321.038-.165.213-.68.168-.868-.048-.197 1.074.284 1.146-.235.029-.225.046-.487-.313-.525.068.008.695-.246.799-.36.146-.168.481-.442.724-.442.284 0 .223-.413.354-.615.131.053-.07.376.087.507-.01-.103.445.057.489.033.104-.054.684-.022.594-.294-.1-.277.051-.195.181-.253-.022.009.34-.619.402-.413-.043-.212-.421.074-.553.063-.305-.024-.176-.52-.061-.665.089-.115-.243-.256-.247-.036-.006.329-.312.627-.241 1.064.108.659-.735-.159-.809-.114-.28.17-.509-.214-.364-.444.148-.235.505-.224.652-.476.104-.178.225-.385.385-.52.535-.449.683-.09 1.216-.041.521.048.176.124.104.324-.069.19.286.258.409.099.07-.092.229-.323.298-.494.089-.222.901-.197.334-.536-.374-.223-2.004-.672-3.096-.672-.236 0-.401.263-.581.412-.356.295-1.268.874-1.775.698-.519-.179-1.63.66-1.808.666-.065.004.004-.634.358-.681-.153.023 1.247-.707 1.209-.859-.046-.18-2.799.822-2.676 1.023.059.092.299.092-.016.294-.18.109-.372.801-.541.801-.505.221-.537-.435-1.099.409l-.894.36c-1.328 1.411-2.247 3.198-2.58 5.183-.013.079.334.226.379.28.112.134.112.712.167.901.138.478.479.744.74 1.179.154.259.41.914.329 1.186.108-.178 1.07.815 1.246 1.022.414.487.733 1.077.061 1.559-.217.156.33 1.129.048 1.368l-.361.093c-.356.219-.195.756.021.982 1.818 1.901 4.38 3.087 7.22 3.087 5.517 0 9.989-4.472 9.989-9.989zm-11.507-6.357c.125-.055.293-.053.311-.22.015-.148.044-.046.08-.1.035-.053-.067-.138-.11-.146-.064-.014-.108.069-.149.104l-.072.019-.068.087.008.048-.087.106c-.085.084.002.139.087.102z"/></svg></a>
+        <a href="https://twitter.com/giraffetweet" class="p-4 socialLink"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+        <a href="https://www.ebay.com/p/7031293057" class="p-4 socialLink"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M5 7c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5zm11.122 12.065c-.073.301-.122.611-.122.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.943 1.764l5.488 2.927zm7.878-15.065c0-2.209-1.791-4-4-4s-4 1.791-4 4c0 .324.049.634.122.935l-5.488 2.927c.395.535.713 1.127.943 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4z"/></svg></a>
+        </div>
+        
+    </footer>
+    <h4 class="smirkyFooterText text-center text-xs sm:text-lg font-bold bg-gray-100">dont even bother finding us we are not to be found 😵 </h4>
+
+    <script async="defer" src="index.js"></script>
+    <script src="css3-animate-it.js"></script>
+</body>
+</html>
