@@ -168,7 +168,7 @@ function sendEmail(body, mail) {
     });
 }
 window.onload = function () {
-    for (let i = 0; i < 250; i++) {
+    for (let i = 0; i < 100; i++) {
         let circle_container = document.createElement("div");
         circle_container.classList.add("circle-container");
         let circle = document.createElement("div");
