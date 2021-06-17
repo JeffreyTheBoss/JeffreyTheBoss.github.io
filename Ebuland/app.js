@@ -205,3 +205,21 @@ function sendEmail(body,mail) {
 		message => alert("you got mail, we fast")
 	);
 } */
+
+
+//!animations
+
+document.getElementById("topnav").style.opacity = 1;
+document.getElementById("topnav").style.marginRight = "0px";
+
+
+document.getElementById("informationbox").style.opacity = 1;
+
+document.getElementById("informationbox").style.left = "50%";
+document.getElementById("informationbox").style.top = "50%";
+
+document.getElementById("sectionOne").style.background = "linear-gradient(to right, #d9a7c7, #fffcdc)";
+
+if(window.innerWidth > 800)
+document.getElementById("sectionOne").style.clipPath = "polygon(0 0, 100% 0, 89% 68%, 13% 87%)";
+
