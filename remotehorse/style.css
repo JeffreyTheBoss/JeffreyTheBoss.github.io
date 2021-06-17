@@ -838,7 +838,7 @@ header nav a:hover {
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 5%;
+  top: 1.6%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -982,6 +982,7 @@ header nav a:hover {
   width: 100%;
   margin: auto;
   font-family: Montserrat, sans-serif;
+  background-image: linear-gradient(#FBC7FD, #AD00B3);
 }
 
 #horseshopcontainer1 {
@@ -993,7 +994,8 @@ header nav a:hover {
   display: inline-block;
   width: 100%;
   padding: 50px 0px;
-  background-color: rgb(145, 118, 50);
+ /* background-color: rgba(211, 164, 46, 0.795); */
+  
 }
 
 .floatleft {
