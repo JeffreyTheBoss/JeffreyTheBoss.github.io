@@ -20,9 +20,9 @@ window.setInterval(function(){
   for(let i = 0; i < 11; i++)
   {
    window.document.getElementsByClassName("hoverelement")[i].onmouseout = function() {
-        inside.style.opacity = "0";
         document.getElementById('lightBox').style.visibility = "hidden";
-        
+        document.getElementById("inside").style.opacity = "0";
+        document.getElementById("inside").style.zIndex = "-10";
       };
   }
 
@@ -31,7 +31,7 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "kitchen wife";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
-    
+    document.getElementById("inside").style.zIndex = "10";
   };
 
   document.getElementsByClassName("hoverelement")[1].onmouseover = function() {
@@ -39,6 +39,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "bedroom wife";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[2].onmouseover = function() {
@@ -46,6 +48,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "leader of the catolic church in west virginia";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[3].onmouseover = function() {
@@ -53,6 +57,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "my sons brother";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[4].onmouseover = function() {
@@ -60,6 +66,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[5].onmouseover = function() {
@@ -67,6 +75,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "the leader of this family and number 1 used leg protesis hobbiist";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[6].onmouseover = function() {
@@ -74,6 +84,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "show wife";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[7].onmouseover = function() {
@@ -81,6 +93,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "cleaning wife";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[8].onmouseover = function() {
@@ -88,6 +102,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "harvard graduate in medicine";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[9].onmouseover = function() {
@@ -95,6 +111,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "leader of the turkish empire";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
   document.getElementsByClassName("hoverelement")[10].onmouseover = function() {
@@ -102,6 +120,8 @@ window.setInterval(function(){
     document.getElementById('insideP').innerHTML = "of this here church";
     document.getElementById("inside").style.opacity = "1";
     document.getElementById('lightBox').style.visibility = "visible";
+    document.getElementById('inside').style.display = "block";
+    document.getElementById("inside").style.zIndex = "10";
     
   };
 
