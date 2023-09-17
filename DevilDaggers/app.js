@@ -59,7 +59,7 @@ xhr.onload = function() {
             var nodeDEL = document.createElement("DEL");
             var nodeA = document.createElement("A");
             nodeA.setAttribute('href',"daggerlobby.html" );
-            var textnode = document.createTextNode(converted.entries[i].rank + ". " + "Erik Cornerhead" + " " + setkomma(converted.entries[i].time));
+            var textnode = document.createTextNode(converted.entries[i].rank + ". " + "Erik Cornerhead" + " " + truncateString(converted.entries[i].time, 9));
             nodeA.appendChild(textnode);
             nodeDEL.appendChild(nodeA);
             node.appendChild(nodeDEL);
@@ -68,11 +68,11 @@ xhr.onload = function() {
         {
             var node = document.createElement("SPAN");
             node.setAttribute('title', "User ID: "+converted.entries[i].id);
-            var textnode = document.createTextNode(converted.entries[i].rank + ". " + converted.entries[i].username + " " + setkomma(converted.entries[i].time));
+            var textnode = document.createTextNode(converted.entries[i].rank + ". " + converted.entries[i].username + " " + truncateString(converted.entries[i].time, 9)  );
             node.appendChild(textnode);
             table.appendChild(node);
         }
-
+//truncateString(converted.entries[i].time, 9)
     }
 
     var node = document.createElement("LI");
@@ -271,6 +271,7 @@ String.prototype.splice = function(idx, rem, str) {
     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
 };
 
+//!depreciated since noahs API changed 
 function setkomma(numba)
 {
     if(numba.toString().length == 8)
@@ -281,6 +282,15 @@ function setkomma(numba)
     {
         return numba.toString().splice(3,0,".");
     }
+}
+
+//!new function that replaces setkomma
+function truncateString(inputString, maxLength) 
+{
+    if (inputString.toString().length > maxLength) {
+      return inputString.toString().substring(0, maxLength); // or inputString.slice(0, maxLength);
+    }
+    return inputString.toString();
 }
 
 function firstDigits(numba)
